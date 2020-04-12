@@ -1,0 +1,9 @@
+*.log*
+.DS_Store
+.env*
+.idea
+.pnp.js
+/.pnp
+/build
+/coverage
+/node_modules
