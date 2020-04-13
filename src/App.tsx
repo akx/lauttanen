@@ -1,9 +1,9 @@
 import React from "react";
-import { GTFSData, RawGTFSData } from "./lib/gtfs/types";
-import { augmentRawGTFSData, parseMultipleUrls } from "./lib/gtfs/parse";
-import { InterstopMap, Leg, LegType, MultilegMachine } from "./lib/multileg";
+import {GTFSData, RawGTFSData} from "./lib/gtfs/types";
+import {augmentRawGTFSData, parseMultipleUrls} from "./lib/gtfs/parse";
+import {InterstopMap, MultilegMachine} from "./lib/multileg";
 import * as datefns from "date-fns";
-import cx from "classnames";
+import {MultilegTable} from './components/MultilegTable';
 
 async function getGTFSData(): Promise<GTFSData> {
   const rawData = await parseMultipleUrls<RawGTFSData>({
@@ -31,63 +31,6 @@ const driveTravelTimes: InterstopMap = {
   [`${korpoRetaisStopId},${korpoCentrumStopId}`]: 30,
   [`${turkuStopId},${parainenStopId}`]: 45, // according to google maps
 };
-
-function MultilegBitView({
-  leg,
-  parentLeg,
-  depth,
-}: {
-  leg: Leg;
-  parentLeg?: Leg;
-  depth: number;
-}) {
-  let typeLogo = "";
-  switch (leg.type) {
-    case LegType.ERROR:
-      typeLogo = "⚡";
-      break;
-    case LegType.DRIVE:
-      typeLogo = "🚗";
-      break;
-    case LegType.FERRY:
-      typeLogo = "🚤";
-      break;
-  }
-  const wait = parentLeg
-    ? datefns.differenceInMinutes(leg.startTime, parentLeg.endTime)
-    : undefined;
-  return (
-    <>
-      <tr
-        className={cx({ initial: depth === 0, final: leg.next.length === 0 })}
-      >
-        <td className="dt st">{datefns.format(leg.startTime, "HH:mm")}</td>
-        <td className="dt et">{datefns.format(leg.endTime, "HH:mm")}</td>
-        <td className="dt du">
-          {datefns.differenceInMinutes(leg.endTime, leg.startTime)} min
-        </td>
-        <td className="dt wt">
-          {wait !== undefined && wait > 0 ? `${wait} min` : null}
-        </td>
-        <td className="tl">{typeLogo}</td>
-        <td className="tx">
-          <div style={{ paddingLeft: `${depth}em` }}>
-            {leg.text}
-            <span className="remark">{leg.remark}</span>
-          </div>
-        </td>
-      </tr>
-      {leg.next.map((childLeg, i) => (
-        <MultilegBitView
-          leg={childLeg}
-          parentLeg={leg}
-          key={i}
-          depth={depth + 1}
-        />
-      ))}
-    </>
-  );
-}
 
 function App() {
   const [gtfsData, setGtfsData] = React.useState<GTFSData | undefined>();
@@ -118,23 +61,8 @@ function App() {
         <br />
         {stops.map((s) => s.stop_name).join(" - ")}
       </h1>
-
       <br />
-      <table id="t">
-        <thead>
-          <th>Start</th>
-          <th>End</th>
-          <th>Dur</th>
-          <th>Wait</th>
-          <th>Type</th>
-          <th>Description</th>
-        </thead>
-        <tbody>
-          {multilegTrips.map((leg, i) => (
-            <MultilegBitView leg={leg} key={i} depth={0} />
-          ))}
-        </tbody>
-      </table>
+      <MultilegTable legs={multilegTrips} />
     </div>
   );
 }

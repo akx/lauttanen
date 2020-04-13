@@ -46,6 +46,7 @@ export enum LegType {
 }
 
 export interface Leg {
+  id: string;
   type: LegType;
   text: string;
   remark?: string;
@@ -62,6 +63,7 @@ export class MultilegMachine {
   private readonly gtfsData: GTFSData;
   private readonly driveMultipliers: number[];
   private readonly disembarkTimeMin: number;
+  private readonly maxFerryOptions: number = 5;
 
   constructor(
     gtfsData: GTFSData,
@@ -84,12 +86,14 @@ export class MultilegMachine {
     const stopsKey = `${stopId1},${stopId2}`;
     const stop1 = this.gtfsData.stopMap[stopId1];
     const stop2 = this.gtfsData.stopMap[stopId2];
+    const defaultId = `${stopId1}-${stopId2}-${startTime}`;
     if (this.interStopTravelMap[stopsKey]) {
       let multipliers = nextLegs.length > 0 ? this.driveMultipliers : [1];
       return multipliers.map((mul) => {
         const minutes = this.interStopTravelMap[stopsKey] * mul;
         const endTime = datefns.add(startTime, { minutes });
         return {
+          id: defaultId,
           type: LegType.DRIVE,
           text: `${stop1.stop_name} -> ${stop2.stop_name}`,
           remark:
@@ -107,10 +111,11 @@ export class MultilegMachine {
         startTime,
         stopId1,
         stopId2
-      ).slice(0, 5);
+      ).slice(0, this.maxFerryOptions);
       if (!trips.length) {
         return [
           {
+            id: defaultId,
             type: LegType.ERROR,
             text: `no valid route: ${stop1.stop_name} -> ${stop2.stop_name}`,
             startTime,
@@ -136,6 +141,7 @@ export class MultilegMachine {
           { minutes: this.disembarkTimeMin }
         );
         return {
+          id: `${trip.trip_id}`,
           type: LegType.FERRY,
           text: trip.trip_headsign,
           startTime: tripStart,
