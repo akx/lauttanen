@@ -1,7 +1,7 @@
-import {Leg, LegType} from '../lib/multileg';
+import { Leg, LegType } from "../lib/multileg";
 import * as datefns from "date-fns";
-import cx from 'classnames';
-import React from 'react';
+import cx from "classnames";
+import React from "react";
 
 interface MultilegTableRowProps {
   leg: Leg;
@@ -11,11 +11,11 @@ interface MultilegTableRowProps {
 }
 
 function MultilegTableRow({
-                            leg,
-                            parentLeg,
-                            depth,
-                            accumulatedDuration,
-                          }: MultilegTableRowProps) {
+  leg,
+  parentLeg,
+  depth,
+  accumulatedDuration,
+}: MultilegTableRowProps) {
   let typeLogo = "";
   switch (leg.type) {
     case LegType.ERROR:
@@ -37,7 +37,7 @@ function MultilegTableRow({
   let initial = depth === 0;
   return (
     <>
-      <tr className={cx({initial, final})}>
+      <tr className={cx({ initial, final })}>
         <td className="dt st">{datefns.format(leg.startTime, "HH:mm")}</td>
         <td className="dt et">{datefns.format(leg.endTime, "HH:mm")}</td>
         <td className="dt du">{legDuration} min</td>
@@ -46,7 +46,7 @@ function MultilegTableRow({
         </td>
         <td className="tl">{typeLogo}</td>
         <td className="tx">
-          <div style={{paddingLeft: `${depth}em`}}>
+          <div style={{ paddingLeft: `${depth}em` }}>
             {leg.text}
             <span className="remark">{leg.remark}</span>
           </div>
@@ -69,10 +69,10 @@ function MultilegTableRow({
 }
 
 interface MultilegTableProps {
-  legs: Leg[]
+  legs: Leg[];
 }
 
-export function MultilegTable({legs}: MultilegTableProps) {
+export function MultilegTable({ legs }: MultilegTableProps) {
   return (
     <table id="t">
       <thead>

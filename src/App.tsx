@@ -1,9 +1,10 @@
 import React from "react";
-import {GTFSData, RawGTFSData} from "./lib/gtfs/types";
-import {augmentRawGTFSData, parseMultipleUrls} from "./lib/gtfs/parse";
-import {InterstopMap, MultilegMachine} from "./lib/multileg";
+import { GTFSData, RawGTFSData } from "./lib/gtfs/types";
+import { augmentRawGTFSData, parseMultipleUrls } from "./lib/gtfs/parse";
+import { InterstopMap, MultilegMachine } from "./lib/multileg";
 import * as datefns from "date-fns";
-import {MultilegTable} from './components/MultilegTable';
+import { MultilegTable } from "./components/MultilegTable";
+import { MultilegGraph } from "./components/MultilegGraph";
 
 async function getGTFSData(): Promise<GTFSData> {
   const rawData = await parseMultipleUrls<RawGTFSData>({
@@ -62,6 +63,7 @@ function App() {
         {stops.map((s) => s.stop_name).join(" - ")}
       </h1>
       <br />
+      <MultilegGraph legs={multilegTrips} />
       <MultilegTable legs={multilegTrips} />
     </div>
   );

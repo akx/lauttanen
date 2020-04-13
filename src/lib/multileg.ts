@@ -86,14 +86,13 @@ export class MultilegMachine {
     const stopsKey = `${stopId1},${stopId2}`;
     const stop1 = this.gtfsData.stopMap[stopId1];
     const stop2 = this.gtfsData.stopMap[stopId2];
-    const defaultId = `${stopId1}-${stopId2}-${startTime}`;
     if (this.interStopTravelMap[stopsKey]) {
       let multipliers = nextLegs.length > 0 ? this.driveMultipliers : [1];
       return multipliers.map((mul) => {
         const minutes = this.interStopTravelMap[stopsKey] * mul;
         const endTime = datefns.add(startTime, { minutes });
         return {
-          id: defaultId,
+          id: `${stopId1}-${stopId2}-${startTime}-${endTime}`,
           type: LegType.DRIVE,
           text: `${stop1.stop_name} -> ${stop2.stop_name}`,
           remark:
@@ -115,7 +114,7 @@ export class MultilegMachine {
       if (!trips.length) {
         return [
           {
-            id: defaultId,
+            id: `${stopId1}-${stopId2}-${startTime}-error`,
             type: LegType.ERROR,
             text: `no valid route: ${stop1.stop_name} -> ${stop2.stop_name}`,
             startTime,
