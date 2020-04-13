@@ -39,9 +39,10 @@ function stopSequenceToLegs(stopIds: string[]): LegList {
 }
 
 export enum LegType {
-  ERROR,
-  DRIVE,
-  FERRY,
+  ERROR = "error",
+  WAIT = "wait",
+  DRIVE = "drive",
+  FERRY = "ferry",
 }
 
 export interface Leg {

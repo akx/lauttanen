@@ -32,9 +32,17 @@ const driveTravelTimes: InterstopMap = {
   [`${turkuStopId},${parainenStopId}`]: 45, // according to google maps
 };
 
-function MultilegBitView({ bit, depth }: { bit: Leg; depth: number }) {
+function MultilegBitView({
+  leg,
+  parentLeg,
+  depth,
+}: {
+  leg: Leg;
+  parentLeg?: Leg;
+  depth: number;
+}) {
   let typeLogo = "";
-  switch (bit.type) {
+  switch (leg.type) {
     case LegType.ERROR:
       typeLogo = "⚡";
       break;
@@ -45,26 +53,37 @@ function MultilegBitView({ bit, depth }: { bit: Leg; depth: number }) {
       typeLogo = "🚤";
       break;
   }
+  const wait = parentLeg
+    ? datefns.differenceInMinutes(leg.startTime, parentLeg.endTime)
+    : undefined;
   return (
     <>
       <tr
-        className={cx({ initial: depth === 0, final: bit.next.length === 0 })}
+        className={cx({ initial: depth === 0, final: leg.next.length === 0 })}
       >
-        <td className="dt st">{datefns.format(bit.startTime, "HH:mm")}</td>
-        <td className="dt et">{datefns.format(bit.endTime, "HH:mm")}</td>
+        <td className="dt st">{datefns.format(leg.startTime, "HH:mm")}</td>
+        <td className="dt et">{datefns.format(leg.endTime, "HH:mm")}</td>
         <td className="dt du">
-          {datefns.differenceInMinutes(bit.endTime, bit.startTime)}min
+          {datefns.differenceInMinutes(leg.endTime, leg.startTime)} min
+        </td>
+        <td className="dt wt">
+          {wait !== undefined && wait > 0 ? `${wait} min` : null}
         </td>
         <td className="tl">{typeLogo}</td>
         <td className="tx">
           <div style={{ paddingLeft: `${depth}em` }}>
-            {bit.text}
-            <span className="remark">{bit.remark}</span>
+            {leg.text}
+            <span className="remark">{leg.remark}</span>
           </div>
         </td>
       </tr>
-      {bit.next.map((nbit, i) => (
-        <MultilegBitView bit={nbit} key={i} depth={depth + 1} />
+      {leg.next.map((childLeg, i) => (
+        <MultilegBitView
+          leg={childLeg}
+          parentLeg={leg}
+          key={i}
+          depth={depth + 1}
+        />
       ))}
     </>
   );
@@ -102,9 +121,17 @@ function App() {
 
       <br />
       <table id="t">
+        <thead>
+          <th>Start</th>
+          <th>End</th>
+          <th>Dur</th>
+          <th>Wait</th>
+          <th>Type</th>
+          <th>Description</th>
+        </thead>
         <tbody>
-          {multilegTrips.map((bit, i) => (
-            <MultilegBitView bit={bit} key={i} depth={0} />
+          {multilegTrips.map((leg, i) => (
+            <MultilegBitView leg={leg} key={i} depth={0} />
           ))}
         </tbody>
       </table>

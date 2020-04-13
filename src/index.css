@@ -16,9 +16,15 @@ table#t {
   border-collapse: collapse;
 }
 
-table#t td {
+table#t td,
+table#t th {
   border: 1px solid orchid;
   padding: 2px;
+}
+
+table#t th {
+  text-align: left;
+  background: orchid;
 }
 
 td.dt,
