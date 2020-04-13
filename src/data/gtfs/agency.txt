@@ -1,0 +1,23 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_email,agency_phone,agency_fare_url
+1,Finferries,http://www.finferries.fi,Europe/Helsinki,jutta.valkeinen@finferries.fi,0207 118 750,
+2,Alandstrafiken,http://www.alandstrafiken.ax,Europe/Helsinki,info@alandstrafiken.ax, +358-18-525 100,
+5,Rosita Oy,http://www.rosita.fi,Europe/Helsinki,info@rosita.fi,(02)213 1500,
+6,JS Ferryway Ltd Oy,http://www.ferryway.fi,Europe/Helsinki,info.jsferryway@gmail.com,+358 400 478 819,
+7,Kuljetus-Savolainen Oy,http://www.kuljetus-savolainen.fi,Europe/Helsinki,info@kuljetus-savolainen.fi,06 5330542,
+8,Archipelago Lines Oy,http://www.saaristolinjat.fi,Europe/Helsinki,info@a-lines.fi,+358 45 124 5551,
+9,Sundqvist Investments Oy Ab,http://www.ostern.fi,Europe/Helsinki,info@ostern.fi,+358 400 720 606,
+10,Pörtö Line,http://www.portoline.net,Europe/Helsinki,markus.broberg@eurowork.info,050 321 1913,
+11,Nordic Coast Line,http://ncl.fi/,Europe/Helsinki,info@ncl.fi,+358 19 536 2200,
+12,Yksityinen,http://www.lautta.net,Europe/Helsinki,,,
+13,HSL,http://www.hsl.fi,Europe/Helsinki,,,https://www.hel.fi/helsinki/fi/kartat-ja-liikenne/joukkoliikenne/lauttaliikenne/vesireittiliikenne/vesireittiliikenne
+14,Vitharun,http://www.vitharun.fi,Europe/Helsinki,,,
+15,Espoon kaupunki,https://www.espoo.fi/fi-FI/Kulttuuri_ja_liikunta/Ulkoilu/Saaristoliikenne,Europe/Helsinki,info@espoo.fi,0500 811 962,https://www.espoo.fi/fi-FI/Kulttuuri_ja_liikunta/Ulkoilu/Saaristoliikenne
+16,Suomen saaristokuljetus,http://www.suomensaaristokuljetus.fi,Europe/Helsinki,info@suomensaaristokuljetus.fi,0600 390 111,http://www.suomensaaristokuljetus.fi
+17,Norsöline,http://www.norsoline.com,Europe/Helsinki,topi.saario@norsoline.com,0400 821 921,http://www.norsoline.com
+18,JT-Line Oy,http://www.jt-line.fi,Europe/Helsinki,info@jt-line.fi,+358 10 205 1880,http://www.jt-line.fi
+19,A&S Ravintolat,http://www.asravintolat.fi,Europe/Helsinki,johanna.haataja@asravintolat.fi,+358 40 77 66 204,http://www.asravintolat.fi
+20,Merisataman lauttaliikenne,https://www.hel.fi/helsinki/fi/kartat-ja-liikenne/joukkoliikenne/lauttaliikenne/vesireittiliikenne/vesireittiliikenne,Europe/Helsinki,,,https://www.hel.fi/helsinki/fi/kartat-ja-liikenne/joukkoliikenne/lauttaliikenne/vesireittiliikenne/vesireittiliikenne
+21,NJK Blekholmen,http://www.njk.fi,Europe/Helsinki,,09 636 047,http://www.njk.fi
+22,Ferra Oy,http://www.ferra.fi,Europe/Helsinki,,0503401512,http://www.ferra.fi
+23,City Cruisers,http://www.citycruisers.fi,Europe/Helsinki,pekka.haltia@welho.com,0400 -216795,http://www.citycruisers.fi
+24,Aava Lines Oy,https://aavalines.fi/,Europe/Helsinki,myynti@aavalines.fi,0406708845,https://aavalines.fi/fi_FI/categories/3-reittiliikenne/products/153-aavalines-edestakainen-matkalippu-pentalan-iltaliikenne
