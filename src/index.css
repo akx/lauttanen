@@ -60,8 +60,9 @@ h1 {
   background: lightgray;
 }
 
-.vis-item.faded {
-  opacity: 0.5;
+.vis-item.faded,
+tr.faded td {
+  opacity: 0.3;
 }
 
 .vis-item.final {

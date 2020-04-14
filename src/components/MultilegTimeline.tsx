@@ -1,14 +1,9 @@
 import { Leg } from "../lib/multileg";
 import Timeline from "./ReactVisjsTimeline";
 import React from "react";
-import { GTFSData } from "../lib/gtfs/types";
 import { DataGroup, DataItem, TimelineOptions } from "vis-timeline";
 import cx from "classnames";
-
-interface MultilegTimelineProps {
-  legs: Leg[];
-  gtfsData: GTFSData;
-}
+import { ViewProps } from "./types";
 
 const options: TimelineOptions = {
   width: "100%",
@@ -24,8 +19,13 @@ const options: TimelineOptions = {
   // },
 };
 
-export function MultilegTimeline({ gtfsData, legs }: MultilegTimelineProps) {
-  const [highlight, setHighlight] = React.useState<string | undefined>();
+export function MultilegTimeline({
+  gtfsData,
+  result,
+  highlight,
+  setHighlight,
+}: ViewProps) {
+  const { legs, legPredecessors } = result;
   const [items, groups] = React.useMemo(() => {
     const itemMap: { [id: string]: DataItem } = {};
     const groupMap: { [id: string]: DataGroup } = {};
@@ -43,9 +43,7 @@ export function MultilegTimeline({ gtfsData, legs }: MultilegTimelineProps) {
         };
       }
       const classes = (itemClasses[itemId] = itemClasses[itemId] || {});
-      const predecessors = (itemPredecessors[itemId] =
-        itemPredecessors[itemId] || new Set());
-      previous.forEach(([leg, prevItemId]) => predecessors.add(prevItemId));
+      itemPredecessors[itemId] = legPredecessors[leg.id]; // just in case we accidentally alias item ids
       classes[leg.type] = true;
       if (!leg.next.length) {
         classes.final = true;
@@ -78,7 +76,7 @@ export function MultilegTimeline({ gtfsData, legs }: MultilegTimelineProps) {
       }
     }
     return [[...Object.values(itemMap)], [...Object.values(groupMap)]];
-  }, [legs, highlight]);
+  }, [gtfsData.stopMap, legs, highlight]);
   const onSelect = ({ items }: { items: string }) => setHighlight(items[0]);
   return (
     <Timeline

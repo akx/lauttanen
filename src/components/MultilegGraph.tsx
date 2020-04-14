@@ -5,17 +5,12 @@ import CytoscapeComponent from "react-cytoscapejs";
 
 import * as datefns from "date-fns";
 import React from "react";
-import { GTFSData } from "../lib/gtfs/types";
-import { start } from "repl";
+import { ViewProps } from "./types";
 
 cytoscape.use(klay);
 
-interface MultilegGraphProps {
-  legs: Leg[];
-  gtfsData: GTFSData;
-}
-
-export function MultilegGraph({ gtfsData, legs }: MultilegGraphProps) {
+export function MultilegGraph({ gtfsData, result }: ViewProps) {
+  const { legs } = result;
   const nodes: { [id: string]: ElementDefinition } = {};
   const edges: { [id: string]: ElementDefinition } = {};
 

@@ -2,32 +2,39 @@ import { Leg, LegType } from "../lib/multileg";
 import * as datefns from "date-fns";
 import cx from "classnames";
 import React from "react";
+import { ViewProps } from "./types";
 
-interface MultilegTableRowProps {
+interface MultilegTableRowProps extends ViewProps {
   leg: Leg;
   parentLeg?: Leg;
   depth: number;
   accumulatedDuration?: number;
 }
 
-function MultilegTableRow({
-  leg,
-  parentLeg,
-  depth,
-  accumulatedDuration,
-}: MultilegTableRowProps) {
-  let typeLogo = "";
+function getLegTypeLogo(leg: Leg): string {
   switch (leg.type) {
     case LegType.ERROR:
-      typeLogo = "⚡";
-      break;
+      return "⚡";
     case LegType.DRIVE:
-      typeLogo = "🚗";
-      break;
+      return "🚗";
     case LegType.FERRY:
-      typeLogo = "🚤";
-      break;
+      return "🚤";
+    case LegType.WAIT:
+      return "⏳";
   }
+  return "???";
+}
+
+function MultilegTableRow(props: MultilegTableRowProps) {
+  const {
+    leg,
+    parentLeg,
+    depth,
+    accumulatedDuration,
+    result,
+    highlight,
+  } = props;
+  const typeLogo = getLegTypeLogo(leg);
   const wait = parentLeg
     ? datefns.differenceInMinutes(leg.startTime, parentLeg.endTime)
     : undefined;
@@ -35,9 +42,14 @@ function MultilegTableRow({
   const newAccumulatedDuration = (accumulatedDuration || 0) + legDuration;
   let final = leg.next.length === 0;
   let initial = depth === 0;
+  const classes: { [key: string]: boolean } = { initial, final };
+  if (highlight && !result.legPredecessors[leg.id].has(highlight)) {
+    classes.faded = true;
+  }
+
   return (
     <>
-      <tr className={cx({ initial, final })}>
+      <tr className={cx(classes)}>
         <td className="dt st">{datefns.format(leg.startTime, "HH:mm")}</td>
         <td className="dt et">{datefns.format(leg.endTime, "HH:mm")}</td>
         <td className="dt du">{legDuration} min</td>
@@ -57,6 +69,7 @@ function MultilegTableRow({
       </tr>
       {leg.next.map((childLeg, i) => (
         <MultilegTableRow
+          {...props}
           leg={childLeg}
           parentLeg={leg}
           key={i}
@@ -68,11 +81,7 @@ function MultilegTableRow({
   );
 }
 
-interface MultilegTableProps {
-  legs: Leg[];
-}
-
-export function MultilegTable({ legs }: MultilegTableProps) {
+export function MultilegTable(props: ViewProps) {
   return (
     <table id="t">
       <thead>
@@ -87,8 +96,8 @@ export function MultilegTable({ legs }: MultilegTableProps) {
         </tr>
       </thead>
       <tbody>
-        {legs.map((leg, i) => (
-          <MultilegTableRow leg={leg} key={i} depth={0} />
+        {props.result.legs.map((leg, i) => (
+          <MultilegTableRow {...props} leg={leg} key={i} depth={0} />
         ))}
       </tbody>
     </table>

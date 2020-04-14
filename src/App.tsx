@@ -41,7 +41,11 @@ function App() {
   }, []);
 
   if (gtfsData === undefined) return null;
+  return <Core gtfsData={gtfsData} />;
+}
 
+function Core({ gtfsData }: { gtfsData: GTFSData }) {
+  const [highlight, setHighlight] = React.useState<string | undefined>();
   const startTime = new Date(2020, 3, 13, 12, 10, 0);
 
   const stopIds = [
@@ -54,8 +58,12 @@ function App() {
   ];
   const stops = stopIds.map((stopId) => gtfsData.stopMap[stopId]);
   const mlm = new MultilegMachine(gtfsData, driveTravelTimes, [1, 1.5], 3);
-  const multilegTrips = mlm.computeMultileg(startTime, stopIds);
-
+  const result = React.useMemo(() => mlm.computeMultileg(startTime, stopIds), [
+    startTime,
+    stopIds,
+  ]);
+  const viewProps = { gtfsData, result, highlight, setHighlight };
+  console.log(result);
   return (
     <div className="App">
       <h1>
@@ -64,9 +72,9 @@ function App() {
         {stops.map((s) => s.stop_name).join(" - ")}
       </h1>
       <br />
-      <MultilegTimeline gtfsData={gtfsData} legs={multilegTrips} />
-      {/*<MultilegGraph gtfsData={gtfsData} legs={multilegTrips} />*/}
-      <MultilegTable legs={multilegTrips} />
+      <MultilegTimeline {...viewProps} />
+      {/*<MultilegGraph {...viewProps} />*/}
+      <MultilegTable {...viewProps} />
     </div>
   );
 }

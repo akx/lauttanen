@@ -58,6 +58,14 @@ export interface Leg {
   next: Leg[];
 }
 
+type LegRelationMap = { [id: string]: Set<string> };
+
+export interface MultilegResult {
+  legs: Leg[];
+  legPredecessors: LegRelationMap;
+  legSuccessors: LegRelationMap;
+}
+
 export class MultilegMachine {
   private readonly interStopTravelMap: InterstopMap;
   private readonly gtfsData: GTFSData;
@@ -92,7 +100,7 @@ export class MultilegMachine {
         const minutes = this.interStopTravelMap[stopsKey] * mul;
         const endTime = datefns.add(startTime, { minutes });
         return {
-          id: `${stopId1}-${stopId2}-${startTime}-${endTime}`,
+          id: `${stopId1}-${stopId2}-${+startTime}-${+endTime}`,
           type: LegType.DRIVE,
           text: `${stop1.stop_name} -> ${stop2.stop_name}`,
           remark:
@@ -114,7 +122,7 @@ export class MultilegMachine {
       if (!trips.length) {
         return [
           {
-            id: `${stopId1}-${stopId2}-${startTime}-error`,
+            id: `${stopId1}-${stopId2}-${+startTime}-error`,
             type: LegType.ERROR,
             text: `no valid route: ${stop1.stop_name} -> ${stop2.stop_name}`,
             startTime,
@@ -153,9 +161,29 @@ export class MultilegMachine {
     }
   }
 
-  public computeMultileg(startTime: Date, stopIds: string[]): Leg[] {
-    const legs = stopSequenceToLegs(stopIds);
-    console.log(legs);
-    return this.computeMultilegBitRecur(startTime, legs);
+  public computeMultileg(startTime: Date, stopIds: string[]): MultilegResult {
+    const legs = this.computeMultilegBitRecur(
+      startTime,
+      stopSequenceToLegs(stopIds)
+    );
+    const legSuccessors: LegRelationMap = {};
+    const legPredecessors: LegRelationMap = {};
+
+    function walk(leg: Leg, previous: Array<Leg> = []) {
+      const thisLegPredecessors = (legPredecessors[leg.id] =
+        legPredecessors[leg.id] || new Set());
+      previous.forEach((pleg) => thisLegPredecessors.add(pleg.id));
+      leg.next.forEach((nleg) => walk(nleg, [...previous, leg]));
+    }
+
+    legs.forEach((leg) => walk(leg));
+    Object.keys(legPredecessors).forEach((legId) => {
+      legPredecessors[legId].forEach((plegId) => {
+        const thisLegSuccessors = (legSuccessors[plegId] =
+          legSuccessors[plegId] || new Set());
+        thisLegSuccessors.add(legId);
+      });
+    });
+    return { legs, legSuccessors, legPredecessors };
   }
 }
