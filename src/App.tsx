@@ -5,6 +5,7 @@ import { InterstopMap, MultilegMachine } from "./lib/multileg";
 import * as datefns from "date-fns";
 import { MultilegTable } from "./components/MultilegTable";
 import { MultilegGraph } from "./components/MultilegGraph";
+import { MultilegTimeline } from "./components/MultilegTimeline";
 
 async function getGTFSData(): Promise<GTFSData> {
   const rawData = await parseMultipleUrls<RawGTFSData>({
@@ -63,7 +64,8 @@ function App() {
         {stops.map((s) => s.stop_name).join(" - ")}
       </h1>
       <br />
-      <MultilegGraph gtfsData={gtfsData} legs={multilegTrips} />
+      <MultilegTimeline gtfsData={gtfsData} legs={multilegTrips} />
+      {/*<MultilegGraph gtfsData={gtfsData} legs={multilegTrips} />*/}
       <MultilegTable legs={multilegTrips} />
     </div>
   );

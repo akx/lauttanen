@@ -853,6 +853,13 @@
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
 
+"@egjs/hammerjs@^2.0.17":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+  integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -1233,6 +1240,11 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/hammerjs@^2.0.36":
+  version "2.0.36"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.36.tgz#17ce0a235e9ffbcdcdf5095646b374c2bf615a4c"
+  integrity sha512-7TUK/k2/QGpEAv/BCwSHlYu3NXZhQ9ZwBYpzr9tjlPIL2C5BeGhH3DmVavRx3ZNyELX5TLC91JTz/cen6AAtIQ==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
@@ -2559,7 +2571,7 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
 
-component-emitter@^1.2.1:
+component-emitter@^1.2.1, component-emitter@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
 
@@ -4182,6 +4194,11 @@ gzip-size@5.1.1:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
+
 handle-thing@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
@@ -5439,6 +5456,11 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
+keycharm@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/keycharm/-/keycharm-0.3.1.tgz#1de258425454752b95c4d8a6cab9ec83218670de"
+  integrity sha512-zn47Ti4FJT9zdF+YBBLWJsfKF/fYQHkrYlBeB5Ez5e2PjW7SoIxr43yehAne2HruulIoid4NKZZxO0dHBygCtQ==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -5900,6 +5922,11 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.3.tgz#5a514b7179259287952881e94410ec5465659f8c"
   dependencies:
     minimist "^1.2.5"
+
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -7261,6 +7288,13 @@ prop-types@^15.6.2, prop-types@^15.7.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
+
+propagating-hammerjs@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/propagating-hammerjs/-/propagating-hammerjs-1.4.7.tgz#671ab1791a7f88b9dccce8fd8b14a9655950e7d6"
+  integrity sha512-oW9Wd+W2Tp5uOz6Fh4mEU7p+FoyU85smLH/mPga83Loh0pHa6AH4ZHGywvwMk3TWP31l7iUsvJyW265p4Ipwrg==
+  dependencies:
+    hammerjs "^2.0.8"
 
 proxy-addr@~2.0.5:
   version "2.0.6"
@@ -8927,6 +8961,11 @@ uuid@^3.0.1, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
 
+uuid@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
+  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
+
 v8-compile-cache@^2.0.3:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
@@ -8953,6 +8992,21 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+vis-data@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-6.5.1.tgz#cd11f8bbf4a17064559b7c75532c3d6f419ff290"
+  integrity sha512-bOIG0REskXot0JbuAYLFRR61xf4ls+nIYNnZ7X04iq2y/Vrg896A/bfquQjhsERZipOmCgllAR0d58OGyo9s0g==
+
+vis-timeline@^7.3.4:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/vis-timeline/-/vis-timeline-7.3.4.tgz#b8db26267c0fb97d9c9055c53831cf4068c6dbe2"
+  integrity sha512-NWO2aMtdekyLqUu9/34Uqj5vRQnhYqHSmNMB4siqq1TySPRNSD/nZtYHSYWF+iGLshJmOaaJ0si/PrHsdAyYkQ==
+
+vis-util@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/vis-util/-/vis-util-4.0.0.tgz#a9900cffb0bbcef3ce88d5834f82b03808101e10"
+  integrity sha512-HLInh9yhJe3AH8I9tgWna304jYABa47Y9kO4M0QKtgSLnVgz7xK0952HFCeGMBJWMXr9XXWporoz/XqND15ukQ==
 
 vm-browserify@^1.0.1:
   version "1.1.2"
