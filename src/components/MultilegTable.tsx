@@ -76,13 +76,15 @@ export function MultilegTable({ legs }: MultilegTableProps) {
   return (
     <table id="t">
       <thead>
-        <th>Start</th>
-        <th>End</th>
-        <th>Dur</th>
-        <th>Wait</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Total Dur</th>
+        <tr>
+          <th>Start</th>
+          <th>End</th>
+          <th>Dur</th>
+          <th>Wait</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Total Dur</th>
+        </tr>
       </thead>
       <tbody>
         {legs.map((leg, i) => (

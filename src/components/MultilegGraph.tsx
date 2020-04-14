@@ -1,30 +1,114 @@
 import { Leg, LegType } from "../lib/multileg";
-import cytoscape from "cytoscape";
+import cytoscape, { ElementDefinition } from "cytoscape";
 import klay from "cytoscape-klay";
 import CytoscapeComponent from "react-cytoscapejs";
 
 import * as datefns from "date-fns";
 import React from "react";
+import { GTFSData } from "../lib/gtfs/types";
+import { start } from "repl";
 
 cytoscape.use(klay);
 
 interface MultilegGraphProps {
   legs: Leg[];
+  gtfsData: GTFSData;
 }
 
-export function MultilegGraph({ legs }: MultilegGraphProps) {
-  const elements = [
-    { data: { id: "one", label: "Node 1" }, position: { x: 0, y: 0 } },
-    { data: { id: "two", label: "Node 2" }, position: { x: 100, y: 0 } },
-    {
-      data: { source: "one", target: "two", label: "Edge from Node1 to Node2" },
-    },
-  ];
+export function MultilegGraph({ gtfsData, legs }: MultilegGraphProps) {
+  const nodes: { [id: string]: ElementDefinition } = {};
+  const edges: { [id: string]: ElementDefinition } = {};
+
+  function stopNode(stopId: string): string {
+    const id = `stop-${stopId}`;
+    if (!nodes[id]) {
+      const stop = gtfsData.stopMap[stopId];
+      nodes[id] = {
+        data: { id, label: stop.stop_name },
+      };
+    }
+    return id;
+  }
+
+  function walk(leg: Leg, previous: Array<[Leg, string, string]>) {
+    let startId = "",
+      endId = "";
+    if (!previous.length) {
+      startId = stopNode(leg.startStopId);
+    } else {
+      startId = previous[previous.length - 1][2];
+    }
+    if (false) {
+      //!leg.next.length) {
+      endId = stopNode(leg.endStopId);
+    } else {
+      endId = `${leg.endStopId}-${leg.endTime}`;
+      const stop = gtfsData.stopMap[leg.endStopId];
+      nodes[endId] = {
+        data: {
+          id: endId,
+          label: `${stop.stop_name} at ${datefns.format(leg.endTime, "HH:mm")}`,
+        },
+      };
+    }
+
+    const edgeId = `${startId}-${endId}-${leg.startTime}`;
+    const legDuration = datefns.differenceInMinutes(leg.endTime, leg.startTime);
+    const parentLeg = previous.length
+      ? previous[previous.length - 1][0]
+      : undefined;
+    const wait = parentLeg
+      ? datefns.differenceInMinutes(leg.startTime, parentLeg.endTime)
+      : undefined;
+    let edgeLabel =
+      (wait ? `${wait}min wait, ` : "") + `${legDuration}min ${leg.type}`;
+    edges[edgeId] = {
+      data: {
+        id: edgeId,
+        source: startId,
+        target: endId,
+        label: edgeLabel,
+      },
+      classes: `${leg.type}`,
+    };
+    leg.next.forEach((l) => walk(l, [...previous, [leg, startId, endId]]));
+  }
+
+  legs.forEach((l) => walk(l, []));
 
   return (
     <CytoscapeComponent
-      elements={elements}
-      style={{ width: "600px", height: "600px", border: "1px solid orange" }}
+      elements={[...Object.values(nodes), ...Object.values(edges)]}
+      stylesheet={[
+        {
+          selector: "node",
+          style: {
+            label: "data(label)",
+          },
+        },
+        {
+          selector: "edge",
+          style: {
+            label: "data(label)",
+            "curve-style": "straight",
+          },
+        },
+        {
+          selector: "edge.ferry",
+          style: {
+            "line-color": "navy",
+          },
+        },
+      ]}
+      layout={{
+        name: "klay",
+        nodeDimensionsIncludeLabels: true,
+        klay: {
+          direction: "RIGHT",
+          edgeRouting: "SPLINES",
+        },
+      }}
+      style={{ width: "100%", height: "600px", border: "1px solid orange" }}
     />
   );
 }

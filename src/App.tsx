@@ -63,7 +63,7 @@ function App() {
         {stops.map((s) => s.stop_name).join(" - ")}
       </h1>
       <br />
-      <MultilegGraph legs={multilegTrips} />
+      <MultilegGraph gtfsData={gtfsData} legs={multilegTrips} />
       <MultilegTable legs={multilegTrips} />
     </div>
   );
