@@ -1,6 +1,7 @@
 import papaparse from "papaparse";
 import { GTFSData, RawGTFSData } from "./types";
 import { groupBy, keyBy } from "lodash";
+import { getTripStopFromToMap } from "./utils";
 
 export async function parseMultipleUrls<T extends object>(urlMap: {
   [key: string]: string;
@@ -20,11 +21,14 @@ export async function parseMultipleUrls<T extends object>(urlMap: {
 }
 
 export function augmentRawGTFSData(rawData: RawGTFSData): GTFSData {
+  const tripStopSequences = groupBy(rawData.stopTimes, (st) => st.trip_id);
+  const tripStopFromToMap = getTripStopFromToMap(tripStopSequences);
   return {
     ...rawData,
     routeMap: keyBy(rawData.routes, "route_id"),
     stopMap: keyBy(rawData.stops, "stop_id"),
     tripMap: keyBy(rawData.trips, "trip_id"),
-    tripStopSequences: groupBy(rawData.stopTimes, (st) => st.trip_id),
+    tripStopSequences,
+    tripStopFromToMap,
   };
 }

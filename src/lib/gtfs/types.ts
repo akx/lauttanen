@@ -16,6 +16,7 @@ export interface GTFSData extends RawGTFSData {
   stopMap: Dictionary<Stop>;
   routeMap: Dictionary<Route>;
   tripStopSequences: Dictionary<StopTime[]>;
+  tripStopFromToMap: FromToTripMap;
 }
 
 export interface Agency {
@@ -99,3 +100,5 @@ export interface Trip {
   bikes_allowed: string;
   cars_allowed: string;
 }
+
+export type FromToTripMap = { [fromTo: string]: Set<string> };

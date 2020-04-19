@@ -1,5 +1,5 @@
 import { GTFSData, Trip } from "./types";
-import { getTripStopFromToMap, getValidServiceIdsForTime } from "./utils";
+import { getValidServiceIdsForTime } from "./utils";
 
 export function getValidTripsForStopPair(
   gtfsData: GTFSData,
@@ -7,9 +7,10 @@ export function getValidTripsForStopPair(
   startStopId: string,
   endStopId: string
 ) {
-  const tripStopFromToMap = getTripStopFromToMap(gtfsData);
-  const possibleTripIds =
-    tripStopFromToMap[`${startStopId},${endStopId}`] || [];
+  const { tripStopFromToMap } = gtfsData;
+  const possibleTripIds = Array.from(
+    tripStopFromToMap[`${startStopId},${endStopId}`] || []
+  );
   const availableServiceIds = getValidServiceIdsForTime(gtfsData, t);
   const possibleTripServiceIds = new Set();
   possibleTripIds.forEach((tripId) =>

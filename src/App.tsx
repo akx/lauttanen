@@ -1,11 +1,12 @@
 import React from "react";
 import { GTFSData, RawGTFSData } from "./lib/gtfs/types";
 import { augmentRawGTFSData, parseMultipleUrls } from "./lib/gtfs/parse";
-import { InterstopMap, MultilegMachine } from "./lib/multileg";
+import { MultilegMachine } from "./lib/multileg";
 import * as datefns from "date-fns";
 import { MultilegTable } from "./components/MultilegTable";
-import { MultilegGraph } from "./components/MultilegGraph";
 import { MultilegTimeline } from "./components/MultilegTimeline";
+import { defaultRoute, driveTravelTimes } from "./tribalKnowledge";
+import { RouteConfig } from "./components/RouteConfig";
 
 async function getGTFSData(): Promise<GTFSData> {
   const rawData = await parseMultipleUrls<RawGTFSData>({
@@ -21,19 +22,6 @@ async function getGTFSData(): Promise<GTFSData> {
   return augmentRawGTFSData(rawData);
 }
 
-const turkuStopId = "1";
-const parainenStopId = "3";
-const nauvoProstvikStopId = "4";
-const nauvoParnasStopId = "29";
-const korpoRetaisStopId = "6";
-const korpoCentrumStopId = "24";
-
-const driveTravelTimes: InterstopMap = {
-  [`${nauvoProstvikStopId},${nauvoParnasStopId}`]: 30,
-  [`${korpoRetaisStopId},${korpoCentrumStopId}`]: 30,
-  [`${turkuStopId},${parainenStopId}`]: 45, // according to google maps
-};
-
 function App() {
   const [gtfsData, setGtfsData] = React.useState<GTFSData | undefined>();
   React.useEffect(() => {
@@ -46,26 +34,34 @@ function App() {
 
 function Core({ gtfsData }: { gtfsData: GTFSData }) {
   const [highlight, setHighlight] = React.useState<string | undefined>();
-  const startTime = new Date(2020, 3, 13, 12, 10, 0);
-
-  const stopIds = [
-    turkuStopId,
-    parainenStopId,
-    nauvoProstvikStopId,
-    nauvoParnasStopId,
-    korpoRetaisStopId,
-    korpoCentrumStopId,
-  ];
+  const [startTime, setStartTime] = React.useState(() => new Date()); //new Date(2020, 3, 13, 12, 10, 0));
+  const [stopIds, setStopIds] = React.useState(() => [...defaultRoute]);
   const stops = stopIds.map((stopId) => gtfsData.stopMap[stopId]);
-  const mlm = new MultilegMachine(gtfsData, driveTravelTimes, [1, 1.5], 3);
+  const mlm = React.useMemo(
+    () => new MultilegMachine(gtfsData, driveTravelTimes, [1, 1.5], 3),
+    [gtfsData]
+  );
   const result = React.useMemo(() => mlm.computeMultileg(startTime, stopIds), [
+    mlm,
     startTime,
     stopIds,
   ]);
   const viewProps = { gtfsData, result, highlight, setHighlight };
-  console.log(result);
   return (
     <div className="App">
+      <div>
+        <input
+          type="datetime-local"
+          value={datefns.format(startTime, "yyyy-MM-dd'T'HH:mm")}
+          onChange={(e) => setStartTime(new Date(e.target.value))}
+        />
+        <RouteConfig
+          stopIds={stopIds}
+          setStopIds={setStopIds}
+          gtfsData={gtfsData}
+          driveTravelTimes={driveTravelTimes}
+        />
+      </div>
       <h1>
         {datefns.format(startTime, "dd.MM.yyyy HH:mm")}
         <br />

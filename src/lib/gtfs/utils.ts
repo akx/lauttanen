@@ -1,12 +1,14 @@
-import { GTFSData, StopTime } from "./types";
+import { FromToTripMap, GTFSData, StopTime } from "./types";
 import formatDate from "date-fns/format";
 import { intersect, union } from "../set-utils";
-import { groupBy } from "lodash";
+import { Dictionary } from "lodash";
 
-export function getTripStopFromToMap(gtfsData: GTFSData) {
-  const tripStopFromToMap: { [fromTo: string]: string[] } = {};
-  for (let tripId in gtfsData.tripStopSequences) {
-    const stops = gtfsData.tripStopSequences[tripId];
+export function getTripStopFromToMap(
+  tripStopSequences: Dictionary<StopTime[]>
+): FromToTripMap {
+  const tripStopFromToMap: FromToTripMap = {};
+  for (let tripId in tripStopSequences) {
+    const stops = tripStopSequences[tripId];
     if (stops.length !== 2) {
       // TODO: support trips with more than 2 stops?
       //console.warn(`trip ${tripId} has more than 2 stops?`, stops);
@@ -15,11 +17,33 @@ export function getTripStopFromToMap(gtfsData: GTFSData) {
     const [fromStop, toStop] = stops;
     const key = `${fromStop.stop_id},${toStop.stop_id}`;
     if (!tripStopFromToMap[key]) {
-      tripStopFromToMap[key] = [];
+      tripStopFromToMap[key] = new Set();
     }
-    tripStopFromToMap[key].push(tripId);
+    tripStopFromToMap[key].add(tripId);
   }
   return tripStopFromToMap;
+}
+
+export function getDestinationStopsFromStop(
+  gtfsData: GTFSData,
+  stopId: string | null
+): Set<string> {
+  if (stopId === null) {
+    return new Set(Object.keys(gtfsData.stopMap));
+  }
+  const destSet = new Set<string>();
+  for (let tripId in gtfsData.tripStopSequences) {
+    const stops = gtfsData.tripStopSequences[tripId];
+    if (stops.length !== 2) {
+      // TODO: support trips with more than 2 stops?
+      continue;
+    }
+    const [fromStop, toStop] = stops;
+    if (fromStop.stop_id === stopId) {
+      destSet.add(toStop.stop_id);
+    }
+  }
+  return destSet;
 }
 
 export function getValidServiceIdsForTime(gtfsData: GTFSData, t: Date) {
