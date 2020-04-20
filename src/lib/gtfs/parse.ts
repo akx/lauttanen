@@ -2,6 +2,7 @@ import papaparse from "papaparse";
 import { GTFSData, RawGTFSData } from "./types";
 import { groupBy, keyBy } from "lodash";
 import { getTripStopFromToMap } from "./utils";
+import formatDate from "date-fns/format";
 
 export async function parseMultipleUrls<T extends object>(urlMap: {
   [key: string]: string;
@@ -18,6 +19,16 @@ export async function parseMultipleUrls<T extends object>(urlMap: {
   });
   const results = await Promise.all(promises);
   return Object.fromEntries(results);
+}
+
+export function filterRawGTFSData(rawData: RawGTFSData, dateCutoff: Date) {
+  const dateCutoffYMD = formatDate(dateCutoff, "yyyyMMdd");
+  rawData.calendarDates = rawData.calendarDates.filter(
+    (cd) => cd.date >= dateCutoffYMD
+  );
+  rawData.calendar = rawData.calendar.filter(
+    (ce) => ce.end_date >= dateCutoffYMD
+  );
 }
 
 export function augmentRawGTFSData(rawData: RawGTFSData): GTFSData {
