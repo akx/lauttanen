@@ -3,6 +3,7 @@ import { InterstopMap } from "../lib/multileg";
 import React from "react";
 import { getDestinationStopsFromStop } from "../lib/gtfs/utils";
 import { reverse, sortBy } from "lodash";
+import { Button, HTMLSelect, Tag } from "@blueprintjs/core";
 
 interface RouteConfigProps {
   stopIds: string[];
@@ -17,9 +18,6 @@ export function RouteConfig({
   gtfsData,
   driveTravelTimes,
 }: RouteConfigProps) {
-  const [nextStopSelection, setNextStopSelection] = React.useState<
-    string | undefined
-  >();
   const lastStopId = stopIds.length ? stopIds[stopIds.length - 1] : null;
   const nextStops = getDestinationStopsFromStop(gtfsData, lastStopId);
   if (lastStopId) {
@@ -30,53 +28,61 @@ export function RouteConfig({
       }
     });
   }
-  const nextSelect = nextStops.size ? (
-    <>
-      <select
-        value={nextStopSelection}
-        onChange={(e) => setNextStopSelection(e.target.value)}
-      >
-        <option value="" />
-        {sortBy(
-          Array.from(nextStops).map((stopId) => [
-            stopId,
-            gtfsData.stopMap[stopId].stop_name,
-          ]),
-          1
-        ).map(([stopId, name]) => (
-          <option key={stopId} value={stopId}>
-            {name}
-          </option>
-        ))}
-      </select>
-      <button
-        disabled={!(nextStopSelection && nextStops.has(nextStopSelection))}
-        onClick={() =>
-          nextStopSelection && setStopIds(stopIds.concat([nextStopSelection]))
+  const nextSelect = (
+    <HTMLSelect
+      disabled={!nextStops.size}
+      onChange={(e) => {
+        const selection = e.target.value;
+        if (nextStops.has(selection)) {
+          setStopIds(stopIds.concat([selection]));
         }
-      >
-        Add
-      </button>
-    </>
-  ) : null;
+      }}
+    >
+      <option value="">Add...</option>
+      {sortBy(
+        Array.from(nextStops).map((stopId) => [
+          stopId,
+          gtfsData.stopMap[stopId].stop_name,
+        ]),
+        1
+      ).map(([stopId, name]) => (
+        <option key={stopId} value={stopId}>
+          {name}
+        </option>
+      ))}
+    </HTMLSelect>
+  );
   return (
     <>
-      {stopIds.map((stopId, idx) => (
-        <span key={idx}>
-          {gtfsData.stopMap[stopId].stop_name}
-          <button
-            onClick={() => setStopIds(stopIds.filter((sid) => sid !== stopId))}
+      <div>
+        {stopIds.map((stopId, idx) => (
+          <Tag
+            key={idx}
+            large
+            onRemove={() => setStopIds(stopIds.filter((sid) => sid !== stopId))}
+            style={{ marginRight: ".5em" }}
           >
-            Remove
-          </button>
-        </span>
-      ))}
-      {nextSelect}
-      {stopIds.length ? (
-        <button onClick={() => setStopIds(reverse([...stopIds]))}>
+            {gtfsData.stopMap[stopId].stop_name}
+          </Tag>
+        ))}
+      </div>
+      <div style={{ marginTop: ".5em" }}>
+        {nextSelect}{" "}
+        <Button
+          icon="refresh"
+          disabled={!stopIds.length}
+          onClick={() => setStopIds(reverse([...stopIds]))}
+        >
           Reverse
-        </button>
-      ) : null}
+        </Button>{" "}
+        <Button
+          icon="delete"
+          disabled={!stopIds.length}
+          onClick={() => setStopIds([])}
+        >
+          Clear
+        </Button>
+      </div>
     </>
   );
 }

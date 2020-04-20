@@ -28,9 +28,6 @@ export function getDestinationStopsFromStop(
   gtfsData: GTFSData,
   stopId: string | null
 ): Set<string> {
-  if (stopId === null) {
-    return new Set(Object.keys(gtfsData.stopMap));
-  }
   const destSet = new Set<string>();
   for (let tripId in gtfsData.tripStopSequences) {
     const stops = gtfsData.tripStopSequences[tripId];
@@ -39,7 +36,11 @@ export function getDestinationStopsFromStop(
       continue;
     }
     const [fromStop, toStop] = stops;
-    if (fromStop.stop_id === stopId) {
+    if (stopId === null) {
+      // If no stop was defined, get all the initial stops we
+      // know have outward routes.
+      destSet.add(fromStop.stop_id);
+    } else if (fromStop.stop_id === stopId) {
       destSet.add(toStop.stop_id);
     }
   }

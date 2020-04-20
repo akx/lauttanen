@@ -1,14 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  margin: 1em;
 }
 
 table#t {
@@ -18,13 +9,11 @@ table#t {
 
 table#t td,
 table#t th {
-  border: 1px solid orchid;
   padding: 2px;
 }
 
 table#t th {
   text-align: left;
-  background: orchid;
 }
 
 td.dt,
@@ -69,7 +58,12 @@ tr.faded td {
   border-right-width: 5px;
   border-right-color: black;
 }
+
 .vis-item.initial {
   border-left-width: 5px;
   border-left-color: black;
+}
+
+tr.highlight td {
+  background: lightgoldenrodyellow;
 }

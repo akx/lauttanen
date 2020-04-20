@@ -3,6 +3,7 @@ import * as datefns from "date-fns";
 import cx from "classnames";
 import React from "react";
 import { ViewProps } from "./types";
+import { HTMLTable } from "@blueprintjs/core";
 
 interface MultilegTableRowProps extends ViewProps {
   leg: Leg;
@@ -33,6 +34,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
     accumulatedDuration,
     result,
     highlight,
+    setHighlight,
   } = props;
   const typeLogo = getLegTypeLogo(leg);
   const wait = parentLeg
@@ -43,13 +45,22 @@ function MultilegTableRow(props: MultilegTableRowProps) {
   let final = leg.next.length === 0;
   let initial = depth === 0;
   const classes: { [key: string]: boolean } = { initial, final };
-  if (highlight && !result.legPredecessors[leg.id].has(highlight)) {
+  if (
+    highlight &&
+    !(highlight === leg.id || result.legPredecessors[leg.id].has(highlight))
+  ) {
     classes.faded = true;
+  }
+  if (highlight === leg.id) {
+    classes.highlight = true;
   }
 
   return (
     <>
-      <tr className={cx(classes)}>
+      <tr
+        className={cx(classes)}
+        onClick={() => setHighlight(highlight === leg.id ? undefined : leg.id)}
+      >
         <td className="dt st">{datefns.format(leg.startTime, "HH:mm")}</td>
         <td className="dt et">{datefns.format(leg.endTime, "HH:mm")}</td>
         <td className="dt du">{legDuration} min</td>
@@ -83,7 +94,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
 
 export function MultilegTable(props: ViewProps) {
   return (
-    <table id="t">
+    <HTMLTable id="t" interactive>
       <thead>
         <tr>
           <th>Start</th>
@@ -100,6 +111,6 @@ export function MultilegTable(props: ViewProps) {
           <MultilegTableRow {...props} leg={leg} key={i} depth={0} />
         ))}
       </tbody>
-    </table>
+    </HTMLTable>
   );
 }
