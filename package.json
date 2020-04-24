@@ -2,6 +2,7 @@
   "name": "lauttanen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akx.github.io/lauttanen/",
   "dependencies": {
     "@blueprintjs/core": "^3.25.0",
     "@blueprintjs/datetime": "^3.16.0",
@@ -38,7 +39,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-and-deploy-and-push": "yarn build && yarn deploy && git push origin gh-pages:gh-pages",
+    "deploy": "ghpg -d build -j"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -60,6 +63,7 @@
     "@types/date-fns": "^2.6.0",
     "@types/lodash": "^4.14.149",
     "@types/papaparse": "^5.0.3",
+    "ghpg": "^1.0.1",
     "prettier": "^2.0.4"
   }
 }
