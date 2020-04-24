@@ -76,7 +76,7 @@ export function MultilegTimeline({
       }
     }
     return [[...Object.values(itemMap)], [...Object.values(groupMap)]];
-  }, [gtfsData.stopMap, legs, highlight]);
+  }, [gtfsData.stopMap, legs, legPredecessors, highlight]);
   const onSelect = ({ items }: { items: string }) => setHighlight(items[0]);
   return (
     <Timeline
