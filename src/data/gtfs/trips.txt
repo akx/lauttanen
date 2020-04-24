@@ -32959,4 +32959,780 @@ route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id,bikes_a
 83,13,32958,Prostvik (Nauvo)-Haverö,0,,,1,1
 83,13,32959,Prostvik (Nauvo)-Haverö,0,,,1,1
 83,13,32960,Prostvik (Nauvo)-Haverö,0,,,1,1
-83,13,32
+83,13,32961,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,13,32962,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,13,32963,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32964,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32965,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32966,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32967,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32968,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32969,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32970,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32971,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32972,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32973,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32974,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32975,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32976,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32977,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32978,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32979,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32980,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32981,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32982,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,15,32983,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32984,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32985,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32986,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32987,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32988,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32989,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32990,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32991,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32992,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32993,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32994,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32995,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32996,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32997,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32998,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,16,32999,Prostvik (Nauvo)-Haverö,0,,,1,1
+83,1,33000,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33001,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33002,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33003,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33004,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33005,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33006,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33007,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33008,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33009,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33010,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33011,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33012,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33013,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33014,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33015,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33016,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33017,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33018,Haverö-Prostvik (Nauvo),0,,,1,1
+83,1,33019,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33020,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33021,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33022,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33023,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33024,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33025,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33026,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33027,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33028,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33029,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33030,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33031,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33032,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33033,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33034,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33035,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33036,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33037,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33038,Haverö-Prostvik (Nauvo),0,,,1,1
+83,3,33039,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33040,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33041,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33042,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33043,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33044,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33045,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33046,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33047,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33048,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33049,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33050,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33051,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33052,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33053,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33054,Haverö-Prostvik (Nauvo),0,,,1,1
+83,4,33055,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33056,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33057,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33058,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33059,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33060,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33061,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33062,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33063,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33064,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33065,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33066,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33067,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33068,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33069,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33070,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33071,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33072,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33073,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33074,Haverö-Prostvik (Nauvo),0,,,1,1
+83,5,33075,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33076,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33077,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33078,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33079,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33080,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33081,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33082,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33083,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33084,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33085,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33086,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33087,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33088,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33089,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33090,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33091,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33092,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33093,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33094,Haverö-Prostvik (Nauvo),0,,,1,1
+83,7,33095,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33096,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33097,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33098,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33099,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33100,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33101,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33102,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33103,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33104,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33105,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33106,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33107,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33108,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33109,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33110,Haverö-Prostvik (Nauvo),0,,,1,1
+83,8,33111,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33112,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33113,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33114,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33115,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33116,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33117,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33118,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33119,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33120,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33121,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33122,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33123,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33124,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33125,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33126,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33127,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33128,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33129,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33130,Haverö-Prostvik (Nauvo),0,,,1,1
+83,9,33131,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33132,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33133,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33134,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33135,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33136,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33137,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33138,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33139,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33140,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33141,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33142,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33143,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33144,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33145,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33146,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33147,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33148,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33149,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33150,Haverö-Prostvik (Nauvo),0,,,1,1
+83,11,33151,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33152,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33153,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33154,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33155,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33156,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33157,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33158,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33159,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33160,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33161,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33162,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33163,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33164,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33165,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33166,Haverö-Prostvik (Nauvo),0,,,1,1
+83,12,33167,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33168,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33169,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33170,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33171,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33172,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33173,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33174,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33175,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33176,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33177,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33178,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33179,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33180,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33181,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33182,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33183,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33184,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33185,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33186,Haverö-Prostvik (Nauvo),0,,,1,1
+83,13,33187,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33188,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33189,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33190,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33191,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33192,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33193,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33194,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33195,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33196,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33197,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33198,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33199,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33200,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33201,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33202,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33203,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33204,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33205,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33206,Haverö-Prostvik (Nauvo),0,,,1,1
+83,15,33207,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33208,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33209,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33210,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33211,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33212,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33213,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33214,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33215,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33216,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33217,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33218,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33219,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33220,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33221,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33222,Haverö-Prostvik (Nauvo),0,,,1,1
+83,16,33223,Haverö-Prostvik (Nauvo),0,,,1,1
+85,28,33224,Teersalo-Hakkenpää,0,,,1,1
+85,882,33225,Teersalo-Hakkenpää,0,,,1,1
+85,50,33226,Teersalo-Hakkenpää,0,,,1,1
+85,653,33227,Teersalo-Hakkenpää,0,,,1,1
+85,725,33228,Teersalo-Hakkenpää,0,,,1,1
+85,727,33229,Teersalo-Hakkenpää,0,,,1,1
+85,897,33230,Teersalo-Hakkenpää,0,,,1,1
+85,898,33231,Teersalo-Hakkenpää,0,,,1,1
+85,744,33232,Teersalo-Hakkenpää,0,,,1,1
+85,746,33233,Teersalo-Hakkenpää,0,,,1,1
+85,899,33234,Teersalo-Hakkenpää,0,,,1,1
+85,900,33235,Teersalo-Hakkenpää,0,,,1,1
+85,28,33236,Hakkenpää-Teersalo,0,,,1,1
+85,882,33237,Hakkenpää-Teersalo,0,,,1,1
+85,50,33238,Hakkenpää-Teersalo,0,,,1,1
+85,653,33239,Hakkenpää-Teersalo,0,,,1,1
+85,725,33240,Hakkenpää-Teersalo,0,,,1,1
+85,727,33241,Hakkenpää-Teersalo,0,,,1,1
+85,897,33242,Hakkenpää-Teersalo,0,,,1,1
+85,898,33243,Hakkenpää-Teersalo,0,,,1,1
+85,744,33244,Hakkenpää-Teersalo,0,,,1,1
+85,746,33245,Hakkenpää-Teersalo,0,,,1,1
+85,899,33246,Hakkenpää-Teersalo,0,,,1,1
+85,900,33247,Hakkenpää-Teersalo,0,,,1,1
+9,252,33248,Palva I-Teersalo,0,,,1,1
+9,252,33249,Palva I-Teersalo,0,,,1,1
+9,252,33250,Palva I-Teersalo,0,,,1,1
+9,252,33251,Palva I-Teersalo,0,,,1,1
+9,252,33252,Palva I-Teersalo,0,,,1,1
+9,252,33253,Palva I-Teersalo,0,,,1,1
+9,252,33254,Palva I-Teersalo,0,,,1,1
+9,252,33255,Palva I-Teersalo,0,,,1,1
+9,252,33256,Palva I-Teersalo,0,,,1,1
+9,252,33257,Palva I-Teersalo,0,,,1,1
+9,252,33258,Palva I-Teersalo,0,,,1,1
+9,252,33259,Palva I-Teersalo,0,,,1,1
+9,252,33260,Palva I-Teersalo,0,,,1,1
+9,252,33261,Palva I-Teersalo,0,,,1,1
+9,252,33262,Palva I-Teersalo,0,,,1,1
+9,252,33263,Palva I-Teersalo,0,,,1,1
+9,252,33264,Palva I-Teersalo,0,,,1,1
+9,252,33265,Palva I-Teersalo,0,,,1,1
+9,252,33266,Palva I-Teersalo,0,,,1,1
+9,252,33267,Palva I-Teersalo,0,,,1,1
+9,252,33268,Palva I-Teersalo,0,,,1,1
+9,252,33269,Palva I-Teersalo,0,,,1,1
+9,252,33270,Palva I-Teersalo,0,,,1,1
+9,252,33271,Palva I-Teersalo,0,,,1,1
+9,252,33272,Palva I-Teersalo,0,,,1,1
+9,252,33273,Palva I-Teersalo,0,,,1,1
+9,252,33274,Palva I-Teersalo,0,,,1,1
+9,252,33275,Palva I-Teersalo,0,,,1,1
+9,252,33276,Palva I-Teersalo,0,,,1,1
+9,252,33277,Palva I-Teersalo,0,,,1,1
+9,252,33278,Palva I-Teersalo,0,,,1,1
+9,252,33279,Palva I-Teersalo,0,,,1,1
+9,252,33280,Palva I-Teersalo,0,,,1,1
+9,158,33281,Palva I-Teersalo,0,,,1,1
+9,158,33282,Palva I-Teersalo,0,,,1,1
+9,158,33283,Palva I-Teersalo,0,,,1,1
+9,158,33284,Palva I-Teersalo,0,,,1,1
+9,158,33285,Palva I-Teersalo,0,,,1,1
+9,158,33286,Palva I-Teersalo,0,,,1,1
+9,158,33287,Palva I-Teersalo,0,,,1,1
+9,158,33288,Palva I-Teersalo,0,,,1,1
+9,158,33289,Palva I-Teersalo,0,,,1,1
+9,158,33290,Palva I-Teersalo,0,,,1,1
+9,158,33291,Palva I-Teersalo,0,,,1,1
+9,158,33292,Palva I-Teersalo,0,,,1,1
+9,158,33293,Palva I-Teersalo,0,,,1,1
+9,158,33294,Palva I-Teersalo,0,,,1,1
+9,158,33295,Palva I-Teersalo,0,,,1,1
+9,158,33296,Palva I-Teersalo,0,,,1,1
+9,158,33297,Palva I-Teersalo,0,,,1,1
+9,158,33298,Palva I-Teersalo,0,,,1,1
+9,158,33299,Palva I-Teersalo,0,,,1,1
+9,158,33300,Palva I-Teersalo,0,,,1,1
+9,158,33301,Palva I-Teersalo,0,,,1,1
+9,158,33302,Palva I-Teersalo,0,,,1,1
+9,158,33303,Palva I-Teersalo,0,,,1,1
+9,158,33304,Palva I-Teersalo,0,,,1,1
+9,158,33305,Palva I-Teersalo,0,,,1,1
+9,158,33306,Palva I-Teersalo,0,,,1,1
+9,158,33307,Palva I-Teersalo,0,,,1,1
+9,158,33308,Palva I-Teersalo,0,,,1,1
+9,158,33309,Palva I-Teersalo,0,,,1,1
+9,158,33310,Palva I-Teersalo,0,,,1,1
+9,158,33311,Palva I-Teersalo,0,,,1,1
+9,158,33312,Palva I-Teersalo,0,,,1,1
+9,158,33313,Palva I-Teersalo,0,,,1,1
+9,158,33314,Palva I-Teersalo,0,,,1,1
+9,158,33315,Palva I-Teersalo,0,,,1,1
+9,158,33316,Palva I-Teersalo,0,,,1,1
+9,158,33317,Palva I-Teersalo,0,,,1,1
+9,158,33318,Palva I-Teersalo,0,,,1,1
+9,158,33319,Palva I-Teersalo,0,,,1,1
+9,158,33320,Palva I-Teersalo,0,,,1,1
+9,161,33321,Palva I-Teersalo,0,,,1,1
+9,161,33322,Palva I-Teersalo,0,,,1,1
+9,161,33323,Palva I-Teersalo,0,,,1,1
+9,161,33324,Palva I-Teersalo,0,,,1,1
+9,161,33325,Palva I-Teersalo,0,,,1,1
+9,161,33326,Palva I-Teersalo,0,,,1,1
+9,161,33327,Palva I-Teersalo,0,,,1,1
+9,161,33328,Palva I-Teersalo,0,,,1,1
+9,161,33329,Palva I-Teersalo,0,,,1,1
+9,161,33330,Palva I-Teersalo,0,,,1,1
+9,161,33331,Palva I-Teersalo,0,,,1,1
+9,161,33332,Palva I-Teersalo,0,,,1,1
+9,161,33333,Palva I-Teersalo,0,,,1,1
+9,161,33334,Palva I-Teersalo,0,,,1,1
+9,161,33335,Palva I-Teersalo,0,,,1,1
+9,161,33336,Palva I-Teersalo,0,,,1,1
+9,161,33337,Palva I-Teersalo,0,,,1,1
+9,161,33338,Palva I-Teersalo,0,,,1,1
+9,161,33339,Palva I-Teersalo,0,,,1,1
+9,161,33340,Palva I-Teersalo,0,,,1,1
+9,161,33341,Palva I-Teersalo,0,,,1,1
+9,161,33342,Palva I-Teersalo,0,,,1,1
+9,161,33343,Palva I-Teersalo,0,,,1,1
+9,161,33344,Palva I-Teersalo,0,,,1,1
+9,161,33345,Palva I-Teersalo,0,,,1,1
+9,161,33346,Palva I-Teersalo,0,,,1,1
+9,161,33347,Palva I-Teersalo,0,,,1,1
+9,161,33348,Palva I-Teersalo,0,,,1,1
+9,161,33349,Palva I-Teersalo,0,,,1,1
+9,161,33350,Palva I-Teersalo,0,,,1,1
+9,161,33351,Palva I-Teersalo,0,,,1,1
+9,161,33352,Palva I-Teersalo,0,,,1,1
+9,161,33353,Palva I-Teersalo,0,,,1,1
+9,161,33354,Palva I-Teersalo,0,,,1,1
+9,161,33355,Palva I-Teersalo,0,,,1,1
+9,161,33356,Palva I-Teersalo,0,,,1,1
+9,161,33357,Palva I-Teersalo,0,,,1,1
+9,161,33358,Palva I-Teersalo,0,,,1,1
+9,161,33359,Palva I-Teersalo,0,,,1,1
+9,161,33360,Palva I-Teersalo,0,,,1,1
+9,901,33361,Palva I-Teersalo,0,,,1,1
+9,901,33362,Palva I-Teersalo,0,,,1,1
+9,901,33363,Palva I-Teersalo,0,,,1,1
+9,901,33364,Palva I-Teersalo,0,,,1,1
+9,901,33365,Palva I-Teersalo,0,,,1,1
+9,901,33366,Palva I-Teersalo,0,,,1,1
+9,901,33367,Palva I-Teersalo,0,,,1,1
+9,901,33368,Palva I-Teersalo,0,,,1,1
+9,901,33369,Palva I-Teersalo,0,,,1,1
+9,901,33370,Palva I-Teersalo,0,,,1,1
+9,901,33371,Palva I-Teersalo,0,,,1,1
+9,901,33372,Palva I-Teersalo,0,,,1,1
+9,901,33373,Palva I-Teersalo,0,,,1,1
+9,901,33374,Palva I-Teersalo,0,,,1,1
+9,901,33375,Palva I-Teersalo,0,,,1,1
+9,901,33376,Palva I-Teersalo,0,,,1,1
+9,901,33377,Palva I-Teersalo,0,,,1,1
+9,901,33378,Palva I-Teersalo,0,,,1,1
+9,901,33379,Palva I-Teersalo,0,,,1,1
+9,901,33380,Palva I-Teersalo,0,,,1,1
+9,901,33381,Palva I-Teersalo,0,,,1,1
+9,901,33382,Palva I-Teersalo,0,,,1,1
+9,901,33383,Palva I-Teersalo,0,,,1,1
+9,901,33384,Palva I-Teersalo,0,,,1,1
+9,901,33385,Palva I-Teersalo,0,,,1,1
+9,901,33386,Palva I-Teersalo,0,,,1,1
+9,901,33387,Palva I-Teersalo,0,,,1,1
+9,901,33388,Palva I-Teersalo,0,,,1,1
+9,901,33389,Palva I-Teersalo,0,,,1,1
+9,901,33390,Palva I-Teersalo,0,,,1,1
+9,901,33391,Palva I-Teersalo,0,,,1,1
+9,901,33392,Palva I-Teersalo,0,,,1,1
+9,901,33393,Palva I-Teersalo,0,,,1,1
+9,901,33394,Palva I-Teersalo,0,,,1,1
+9,254,33395,Palva I-Teersalo,0,,,1,1
+9,254,33396,Palva I-Teersalo,0,,,1,1
+9,254,33397,Palva I-Teersalo,0,,,1,1
+9,254,33398,Palva I-Teersalo,0,,,1,1
+9,254,33399,Palva I-Teersalo,0,,,1,1
+9,254,33400,Palva I-Teersalo,0,,,1,1
+9,254,33401,Palva I-Teersalo,0,,,1,1
+9,254,33402,Palva I-Teersalo,0,,,1,1
+9,254,33403,Palva I-Teersalo,0,,,1,1
+9,254,33404,Palva I-Teersalo,0,,,1,1
+9,254,33405,Palva I-Teersalo,0,,,1,1
+9,254,33406,Palva I-Teersalo,0,,,1,1
+9,254,33407,Palva I-Teersalo,0,,,1,1
+9,254,33408,Palva I-Teersalo,0,,,1,1
+9,254,33409,Palva I-Teersalo,0,,,1,1
+9,254,33410,Palva I-Teersalo,0,,,1,1
+9,254,33411,Palva I-Teersalo,0,,,1,1
+9,254,33412,Palva I-Teersalo,0,,,1,1
+9,254,33413,Palva I-Teersalo,0,,,1,1
+9,254,33414,Palva I-Teersalo,0,,,1,1
+9,254,33415,Palva I-Teersalo,0,,,1,1
+9,254,33416,Palva I-Teersalo,0,,,1,1
+9,254,33417,Palva I-Teersalo,0,,,1,1
+9,254,33418,Palva I-Teersalo,0,,,1,1
+9,254,33419,Palva I-Teersalo,0,,,1,1
+9,254,33420,Palva I-Teersalo,0,,,1,1
+9,254,33421,Palva I-Teersalo,0,,,1,1
+9,254,33422,Palva I-Teersalo,0,,,1,1
+9,254,33423,Palva I-Teersalo,0,,,1,1
+9,254,33424,Palva I-Teersalo,0,,,1,1
+9,254,33425,Palva I-Teersalo,0,,,1,1
+9,254,33426,Palva I-Teersalo,0,,,1,1
+9,254,33427,Palva I-Teersalo,0,,,1,1
+9,254,33428,Palva I-Teersalo,0,,,1,1
+9,252,33429,Teersalo-Palva I,0,,,1,1
+9,252,33430,Teersalo-Palva I,0,,,1,1
+9,252,33431,Teersalo-Palva I,0,,,1,1
+9,252,33432,Teersalo-Palva I,0,,,1,1
+9,252,33433,Teersalo-Palva I,0,,,1,1
+9,252,33434,Teersalo-Palva I,0,,,1,1
+9,252,33435,Teersalo-Palva I,0,,,1,1
+9,252,33436,Teersalo-Palva I,0,,,1,1
+9,252,33437,Teersalo-Palva I,0,,,1,1
+9,252,33438,Teersalo-Palva I,0,,,1,1
+9,252,33439,Teersalo-Palva I,0,,,1,1
+9,252,33440,Teersalo-Palva I,0,,,1,1
+9,252,33441,Teersalo-Palva I,0,,,1,1
+9,252,33442,Teersalo-Palva I,0,,,1,1
+9,252,33443,Teersalo-Palva I,0,,,1,1
+9,252,33444,Teersalo-Palva I,0,,,1,1
+9,252,33445,Teersalo-Palva I,0,,,1,1
+9,252,33446,Teersalo-Palva I,0,,,1,1
+9,252,33447,Teersalo-Palva I,0,,,1,1
+9,252,33448,Teersalo-Palva I,0,,,1,1
+9,252,33449,Teersalo-Palva I,0,,,1,1
+9,252,33450,Teersalo-Palva I,0,,,1,1
+9,252,33451,Teersalo-Palva I,0,,,1,1
+9,252,33452,Teersalo-Palva I,0,,,1,1
+9,252,33453,Teersalo-Palva I,0,,,1,1
+9,252,33454,Teersalo-Palva I,0,,,1,1
+9,252,33455,Teersalo-Palva I,0,,,1,1
+9,252,33456,Teersalo-Palva I,0,,,1,1
+9,252,33457,Teersalo-Palva I,0,,,1,1
+9,252,33458,Teersalo-Palva I,0,,,1,1
+9,252,33459,Teersalo-Palva I,0,,,1,1
+9,252,33460,Teersalo-Palva I,0,,,1,1
+9,252,33461,Teersalo-Palva I,0,,,1,1
+9,158,33462,Teersalo-Palva I,0,,,1,1
+9,158,33463,Teersalo-Palva I,0,,,1,1
+9,158,33464,Teersalo-Palva I,0,,,1,1
+9,158,33465,Teersalo-Palva I,0,,,1,1
+9,158,33466,Teersalo-Palva I,0,,,1,1
+9,158,33467,Teersalo-Palva I,0,,,1,1
+9,158,33468,Teersalo-Palva I,0,,,1,1
+9,158,33469,Teersalo-Palva I,0,,,1,1
+9,158,33470,Teersalo-Palva I,0,,,1,1
+9,158,33471,Teersalo-Palva I,0,,,1,1
+9,158,33472,Teersalo-Palva I,0,,,1,1
+9,158,33473,Teersalo-Palva I,0,,,1,1
+9,158,33474,Teersalo-Palva I,0,,,1,1
+9,158,33475,Teersalo-Palva I,0,,,1,1
+9,158,33476,Teersalo-Palva I,0,,,1,1
+9,158,33477,Teersalo-Palva I,0,,,1,1
+9,158,33478,Teersalo-Palva I,0,,,1,1
+9,158,33479,Teersalo-Palva I,0,,,1,1
+9,158,33480,Teersalo-Palva I,0,,,1,1
+9,158,33481,Teersalo-Palva I,0,,,1,1
+9,158,33482,Teersalo-Palva I,0,,,1,1
+9,158,33483,Teersalo-Palva I,0,,,1,1
+9,158,33484,Teersalo-Palva I,0,,,1,1
+9,158,33485,Teersalo-Palva I,0,,,1,1
+9,158,33486,Teersalo-Palva I,0,,,1,1
+9,158,33487,Teersalo-Palva I,0,,,1,1
+9,158,33488,Teersalo-Palva I,0,,,1,1
+9,158,33489,Teersalo-Palva I,0,,,1,1
+9,158,33490,Teersalo-Palva I,0,,,1,1
+9,158,33491,Teersalo-Palva I,0,,,1,1
+9,158,33492,Teersalo-Palva I,0,,,1,1
+9,158,33493,Teersalo-Palva I,0,,,1,1
+9,158,33494,Teersalo-Palva I,0,,,1,1
+9,158,33495,Teersalo-Palva I,0,,,1,1
+9,158,33496,Teersalo-Palva I,0,,,1,1
+9,158,33497,Teersalo-Palva I,0,,,1,1
+9,158,33498,Teersalo-Palva I,0,,,1,1
+9,158,33499,Teersalo-Palva I,0,,,1,1
+9,158,33500,Teersalo-Palva I,0,,,1,1
+9,158,33501,Teersalo-Palva I,0,,,1,1
+9,161,33502,Teersalo-Palva I,0,,,1,1
+9,161,33503,Teersalo-Palva I,0,,,1,1
+9,161,33504,Teersalo-Palva I,0,,,1,1
+9,161,33505,Teersalo-Palva I,0,,,1,1
+9,161,33506,Teersalo-Palva I,0,,,1,1
+9,161,33507,Teersalo-Palva I,0,,,1,1
+9,161,33508,Teersalo-Palva I,0,,,1,1
+9,161,33509,Teersalo-Palva I,0,,,1,1
+9,161,33510,Teersalo-Palva I,0,,,1,1
+9,161,33511,Teersalo-Palva I,0,,,1,1
+9,161,33512,Teersalo-Palva I,0,,,1,1
+9,161,33513,Teersalo-Palva I,0,,,1,1
+9,161,33514,Teersalo-Palva I,0,,,1,1
+9,161,33515,Teersalo-Palva I,0,,,1,1
+9,161,33516,Teersalo-Palva I,0,,,1,1
+9,161,33517,Teersalo-Palva I,0,,,1,1
+9,161,33518,Teersalo-Palva I,0,,,1,1
+9,161,33519,Teersalo-Palva I,0,,,1,1
+9,161,33520,Teersalo-Palva I,0,,,1,1
+9,161,33521,Teersalo-Palva I,0,,,1,1
+9,161,33522,Teersalo-Palva I,0,,,1,1
+9,161,33523,Teersalo-Palva I,0,,,1,1
+9,161,33524,Teersalo-Palva I,0,,,1,1
+9,161,33525,Teersalo-Palva I,0,,,1,1
+9,161,33526,Teersalo-Palva I,0,,,1,1
+9,161,33527,Teersalo-Palva I,0,,,1,1
+9,161,33528,Teersalo-Palva I,0,,,1,1
+9,161,33529,Teersalo-Palva I,0,,,1,1
+9,161,33530,Teersalo-Palva I,0,,,1,1
+9,161,33531,Teersalo-Palva I,0,,,1,1
+9,161,33532,Teersalo-Palva I,0,,,1,1
+9,161,33533,Teersalo-Palva I,0,,,1,1
+9,161,33534,Teersalo-Palva I,0,,,1,1
+9,161,33535,Teersalo-Palva I,0,,,1,1
+9,161,33536,Teersalo-Palva I,0,,,1,1
+9,161,33537,Teersalo-Palva I,0,,,1,1
+9,161,33538,Teersalo-Palva I,0,,,1,1
+9,161,33539,Teersalo-Palva I,0,,,1,1
+9,161,33540,Teersalo-Palva I,0,,,1,1
+9,161,33541,Teersalo-Palva I,0,,,1,1
+9,901,33542,Teersalo-Palva I,0,,,1,1
+9,901,33543,Teersalo-Palva I,0,,,1,1
+9,901,33544,Teersalo-Palva I,0,,,1,1
+9,901,33545,Teersalo-Palva I,0,,,1,1
+9,901,33546,Teersalo-Palva I,0,,,1,1
+9,901,33547,Teersalo-Palva I,0,,,1,1
+9,901,33548,Teersalo-Palva I,0,,,1,1
+9,901,33549,Teersalo-Palva I,0,,,1,1
+9,901,33550,Teersalo-Palva I,0,,,1,1
+9,901,33551,Teersalo-Palva I,0,,,1,1
+9,901,33552,Teersalo-Palva I,0,,,1,1
+9,901,33553,Teersalo-Palva I,0,,,1,1
+9,901,33554,Teersalo-Palva I,0,,,1,1
+9,901,33555,Teersalo-Palva I,0,,,1,1
+9,901,33556,Teersalo-Palva I,0,,,1,1
+9,901,33557,Teersalo-Palva I,0,,,1,1
+9,901,33558,Teersalo-Palva I,0,,,1,1
+9,901,33559,Teersalo-Palva I,0,,,1,1
+9,901,33560,Teersalo-Palva I,0,,,1,1
+9,901,33561,Teersalo-Palva I,0,,,1,1
+9,901,33562,Teersalo-Palva I,0,,,1,1
+9,901,33563,Teersalo-Palva I,0,,,1,1
+9,901,33564,Teersalo-Palva I,0,,,1,1
+9,901,33565,Teersalo-Palva I,0,,,1,1
+9,901,33566,Teersalo-Palva I,0,,,1,1
+9,901,33567,Teersalo-Palva I,0,,,1,1
+9,901,33568,Teersalo-Palva I,0,,,1,1
+9,901,33569,Teersalo-Palva I,0,,,1,1
+9,901,33570,Teersalo-Palva I,0,,,1,1
+9,901,33571,Teersalo-Palva I,0,,,1,1
+9,901,33572,Teersalo-Palva I,0,,,1,1
+9,901,33573,Teersalo-Palva I,0,,,1,1
+9,901,33574,Teersalo-Palva I,0,,,1,1
+9,254,33575,Teersalo-Palva I,0,,,1,1
+9,254,33576,Teersalo-Palva I,0,,,1,1
+9,254,33577,Teersalo-Palva I,0,,,1,1
+9,254,33578,Teersalo-Palva I,0,,,1,1
+9,254,33579,Teersalo-Palva I,0,,,1,1
+9,254,33580,Teersalo-Palva I,0,,,1,1
+9,254,33581,Teersalo-Palva I,0,,,1,1
+9,254,33582,Teersalo-Palva I,0,,,1,1
+9,254,33583,Teersalo-Palva I,0,,,1,1
+9,254,33584,Teersalo-Palva I,0,,,1,1
+9,254,33585,Teersalo-Palva I,0,,,1,1
+9,254,33586,Teersalo-Palva I,0,,,1,1
+9,254,33587,Teersalo-Palva I,0,,,1,1
+9,254,33588,Teersalo-Palva I,0,,,1,1
+9,254,33589,Teersalo-Palva I,0,,,1,1
+9,254,33590,Teersalo-Palva I,0,,,1,1
+9,254,33591,Teersalo-Palva I,0,,,1,1
+9,254,33592,Teersalo-Palva I,0,,,1,1
+9,254,33593,Teersalo-Palva I,0,,,1,1
+9,254,33594,Teersalo-Palva I,0,,,1,1
+9,254,33595,Teersalo-Palva I,0,,,1,1
+9,254,33596,Teersalo-Palva I,0,,,1,1
+9,254,33597,Teersalo-Palva I,0,,,1,1
+9,254,33598,Teersalo-Palva I,0,,,1,1
+9,254,33599,Teersalo-Palva I,0,,,1,1
+9,254,33600,Teersalo-Palva I,0,,,1,1
+9,254,33601,Teersalo-Palva I,0,,,1,1
+9,254,33602,Teersalo-Palva I,0,,,1,1
+9,254,33603,Teersalo-Palva I,0,,,1,1
+9,254,33604,Teersalo-Palva I,0,,,1,1
+9,254,33605,Teersalo-Palva I,0,,,1,1
+9,254,33606,Teersalo-Palva I,0,,,1,1
+9,254,33607,Teersalo-Palva I,0,,,1,1
+28,252,33608,Arvinsalmi,0,,,1,1
+28,252,33609,Arvinsalmi,0,,,1,1
+28,252,33610,Arvinsalmi,0,,,1,1
+28,252,33611,Arvinsalmi,0,,,1,1
+28,252,33612,Arvinsalmi,0,,,1,1
+21,252,33613,Eskilsö,0,,,1,1
+21,252,33614,Eskilsö,0,,,1,1
+21,252,33615,Eskilsö,0,,,1,1
+21,252,33616,Eskilsö,0,,,1,1
+21,252,33617,Eskilsö,0,,,1,1
+21,252,33618,Eskilsö,0,,,1,1
+21,252,33619,Eskilsö,0,,,1,1
+27,252,33620,Hanhivirta,0,,,1,1
+27,252,33621,Hanhivirta,0,,,1,1
+27,252,33622,Hanhivirta,0,,,1,1
+27,252,33623,Hanhivirta,0,,,1,1
+27,252,33624,Hanhivirta,0,,,1,1
+29,252,33625,Hätinvirta,0,,,1,1
+29,252,33626,Hätinvirta,0,,,1,1
+29,252,33627,Hätinvirta,0,,,1,1
+29,252,33628,Hätinvirta,0,,,1,1
+29,252,33629,Hätinvirta,0,,,1,1
+68,902,33630,Haukkasalo,0,,,1,1
+68,903,33631,Haukkasalo,0,,,1,1
+68,904,33632,Haukkasalo,0,,,1,1
+68,904,33633,Haukkasalo,0,,,1,1
+68,905,33634,Haukkasalo,0,,,1,1
+24,906,33635,Hirvisalmi,0,,,1,1
+24,906,33636,Hirvisalmi,0,,,1,1
+24,906,33637,Hirvisalmi,0,,,1,1
+24,906,33638,Hirvisalmi,0,,,1,1
+24,906,33639,Hirvisalmi,0,,,1,1
+3,906,33640,Högsar,0,,,1,1
+3,906,33641,Högsar,0,,,1,1
+3,906,33642,Högsar,0,,,1,1
+3,906,33643,Högsar,0,,,1,1
+3,906,33644,Högsar,0,,,1,1
+71,907,33645,Jussilansalmi,0,,,1,1
+71,907,33646,Jussilansalmi,0,,,1,1
+71,907,33647,Jussilansalmi,0,,,1,1
+71,907,33648,Jussilansalmi,0,,,1,1
+71,907,33649,Jussilansalmi,0,,,1,1
+71,907,33650,Jussilansalmi,0,,,1,1
+71,907,33651,Jussilansalmi,0,,,1,1
+71,907,33652,Jussilansalmi,0,,,1,1
+71,907,33653,Jussilansalmi,0,,,1,1
+71,907,33654,Jussilansalmi,0,,,1,1
+71,907,33655,Jussilansalmi,0,,,1,1
+71,907,33656,Jussilansalmi,0,,,1,1
+71,907,33657,Jussilansalmi,0,,,1,1
+71,907,33658,Jussilansalmi,0,,,1,1
+71,907,33659,Jussilansalmi,0,,,1,1
+71,907,33660,Jussilansalmi,0,,,1,1
+71,907,33661,Jussilansalmi,0,,,1,1
+71,907,33662,Jussilansalmi,0,,,1,1
+82,908,33663,Karhusalmi,0,,,1,1
+82,908,33664,Karhusalmi,0,,,1,1
+82,908,33665,Karhusalmi,0,,,1,1
+82,909,33666,Karhusalmi,0,,,1,1
+82,909,33667,Karhusalmi,0,,,1,1
+82,909,33668,Karhusalmi,0,,,1,1
+36,910,33669,Kietävälä,0,,,1,1
+36,910,33670,Kietävälä,0,,,1,1
+36,910,33671,Kietävälä,0,,,1,1
+36,910,33672,Kietävälä,0,,,1,1
+36,910,33673,Kietävälä,0,,,1,1
+30,910,33674,Koivukanta,0,,,1,1
+30,910,33675,Koivukanta,0,,,1,1
+30,910,33676,Koivukanta,0,,,1,1
+30,910,33677,Koivukanta,0,,,1,1
+30,910,33678,Koivukanta,0,,,1,1
+26,910,33679,Kortesalmi,0,,,1,1
+26,910,33680,Kortesalmi,0,,,1,1
+26,910,33681,Kortesalmi,0,,,1,1
+26,910,33682,Kortesalmi,0,,,1,1
+26,910,33683,Kortesalmi,0,,,1,1
+31,908,33684,Kuparonvirta,0,,,1,1
+31,908,33685,Kuparonvirta,0,,,1,1
+31,908,33686,Kuparonvirta,0,,,1,1
+31,908,33687,Kuparonvirta,0,,,1,1
+31,908,33688,Kuparonvirta,0,,,1,1
+31,909,33689,Kuparonvirta,0,,,1,1
+31,909,33690,Kuparonvirta,0,,,1,1
+31,909,33691,Kuparonvirta,0,,,1,1
+37,910,33692,Kyläniemi,0,,,1,1
+37,910,33693,Kyläniemi,0,,,1,1
+37,910,33694,Kyläniemi,0,,,1,1
+37,910,33695,Kyläniemi,0,,,1,1
+37,910,33696,Kyläniemi,0,,,1,1
+32,910,33697,Lamposaari,0,,,1,1
+32,910,33698,Lamposaari,0,,,1,1
+32,910,33699,Lamposaari,0,,,1,1
+32,910,33700,Lamposaari,0,,,1,1
+32,910,33701,Lamposaari,0,,,1,1
+80,908,33702,Pettu,0,,,1,1
+80,911,33703,Pettu,0,,,1,1
+80,912,33704,Pettu,0,,,1,1
+80,910,33705,Pettu,0,,,1,1
+80,910,33706,Pettu,0,,,1,1
+80,910,33707,Pettu,0,,,1,1
+80,910,33708,Pettu,0,,,1,1
+22,252,33709,Räisälä,0,,,1,1
+22,252,33710,Räisälä,0,,,1,1
+22,252,33711,Räisälä,0,,,1,1
+22,252,33712,Räisälä,0,,,1,1
+22,252,33713,Räisälä,0,,,1,1
+35,780,33714,Rongonsalmi,0,,,1,1
+35,780,33715,Rongonsalmi,0,,,1,1
+35,780,33716,Rongonsalmi,0,,,1,1
+35,780,33717,Rongonsalmi,0,,,1,1
+35,780,33718,Rongonsalmi,0,,,1,1
+35,4,33719,Rongonsalmi,0,,,1,1
+35,4,33720,Rongonsalmi,0,,,1,1
+35,4,33721,Rongonsalmi,0,,,1,1
+11,252,33722,Saverkeit,0,,,1,1
+11,252,33723,Saverkeit,0,,,1,1
+11,252,33724,Saverkeit,0,,,1,1
+11,252,33725,Saverkeit,0,,,1,1
+11,252,33726,Saverkeit,0,,,1,1
+70,252,33727,Sorpo,0,,,1,1
+33,252,33728,Tappuvirta,0,,,1,1
+33,252,33729,Tappuvirta,0,,,1,1
+33,252,33730,Tappuvirta,0,,,1,1
+33,252,33731,Tappuvirta,0,,,1,1
+33,252,33732,Tappuvirta,0,,,1,1
+34,252,33733,Vekaransalmi,0,,,1,1
+34,252,33734,Vekaransalmi,0,,,1,1
+34,252,33735,Vekaransalmi,0,,,1,1
+34,252,33736,Vekaransalmi,0,,,1,1
+34,252,33737,Vekaransalmi,0,,,1,1
