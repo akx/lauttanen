@@ -1,42 +1,21 @@
 import React from "react";
-import { GTFSData, RawGTFSData } from "./lib/gtfs/types";
-import {
-  augmentRawGTFSData,
-  filterRawGTFSData,
-  parseMultipleUrls,
-} from "./lib/gtfs/parse";
+import { GTFSData } from "./lib/gtfs/types";
 import { MultilegMachine } from "./lib/multileg";
 import * as datefns from "date-fns";
 import { MultilegTable } from "./components/MultilegTable";
 import { MultilegTimeline } from "./components/MultilegTimeline";
 import { defaultRoute, driveTravelTimes } from "./tribalKnowledge";
-import { NonIdealState, Tabs, Tab, Button } from "@blueprintjs/core";
+import { Button, NonIdealState, Tab, Tabs } from "@blueprintjs/core";
 import { uniq } from "lodash";
 import { ConfigSection } from "./components/ConfigSection";
 import { MultilegGraph } from "./components/MultilegGraph";
 import { ViewProps } from "./components/types";
-
-async function getGTFSData(cutoffDate?: Date): Promise<GTFSData> {
-  let rawData = await parseMultipleUrls<RawGTFSData>({
-    agency: require("./data/gtfs/agency.txt"),
-    calendar: require("./data/gtfs/calendar.txt"),
-    calendarDates: require("./data/gtfs/calendar_dates.txt"),
-    frequencies: require("./data/gtfs/frequencies.txt"),
-    routes: require("./data/gtfs/routes.txt"),
-    stopTimes: require("./data/gtfs/stop_times.txt"),
-    stops: require("./data/gtfs/stops.txt"),
-    trips: require("./data/gtfs/trips.txt"),
-  });
-  if (cutoffDate) {
-    filterRawGTFSData(rawData, cutoffDate);
-  }
-  return augmentRawGTFSData(rawData);
-}
+import { getFilteredGTFSData } from "./app-data";
 
 function App() {
   const [gtfsData, setGtfsData] = React.useState<GTFSData | undefined>();
   React.useEffect(() => {
-    getGTFSData(new Date(2020, 0)).then(setGtfsData);
+    getFilteredGTFSData().then(setGtfsData);
   }, []);
 
   if (gtfsData === undefined) return null;
