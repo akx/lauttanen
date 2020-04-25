@@ -2,8 +2,8 @@
 .DS_Store
 .env*
 .idea
+.pnp
 .pnp.js
-/.pnp
-/build
-/coverage
-/node_modules
+/app/build
+coverage
+node_modules
