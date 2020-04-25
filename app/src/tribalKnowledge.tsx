@@ -1,10 +1,10 @@
 import { InterstopMap } from "./lib/multileg";
 
-const turkuStopId = "1";
-const parainenStopId = "3";
-const nauvoProstvikStopId = "4";
-const nauvoParnasStopId = "29";
-const korpoRetaisStopId = "6";
+const turkuStopId = "c1";
+const parainenStopId = "c3";
+const nauvoProstvikStopId = "c4";
+const nauvoParnasStopId = "c29";
+const korpoRetaisStopId = "c6";
 const korpoCentrumStopId = "24";
 export const defaultRoute = [
   turkuStopId,

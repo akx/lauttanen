@@ -1,5 +1,5 @@
-import { GTFSData, Trip } from "./gtfs/types";
-import { getValidTripsForStopPair } from "./gtfs/trips";
+import {GTFSData, Trip} from "./gtfs/types";
+import {getValidTripsForStopPair} from "./gtfs/trips";
 import {
   dateToDaySeconds,
   hmsStringToDaySeconds,
@@ -94,11 +94,18 @@ export class MultilegMachine {
     const stopsKey = `${stopId1},${stopId2}`;
     const stop1 = this.gtfsData.stopMap[stopId1];
     const stop2 = this.gtfsData.stopMap[stopId2];
+    if (!stop1) {
+      throw new Error(`missing stop 1: ${stopId1}`);
+    }
+    if (!stop2) {
+      throw new Error(`missing stop 2: ${stopId2}`);
+    }
+
     if (this.interStopTravelMap[stopsKey]) {
       let multipliers = nextLegs.length > 0 ? this.driveMultipliers : [1];
       return multipliers.map((mul) => {
         const minutes = this.interStopTravelMap[stopsKey] * mul;
-        const endTime = datefns.add(startTime, { minutes });
+        const endTime = datefns.add(startTime, {minutes});
         return {
           id: `${stopId1}-${stopId2}-${+startTime}-${+endTime}`,
           type: LegType.DRIVE,
@@ -144,8 +151,8 @@ export class MultilegMachine {
           seconds: ds,
         });
         const tripEnd = datefns.add(
-          datefns.set(startTime, { hours: ah, minutes: am, seconds: as }),
-          { minutes: this.disembarkTimeMin }
+          datefns.set(startTime, {hours: ah, minutes: am, seconds: as}),
+          {minutes: this.disembarkTimeMin}
         );
         return {
           id: `${trip.trip_id}`,
@@ -184,6 +191,6 @@ export class MultilegMachine {
         thisLegSuccessors.add(legId);
       });
     });
-    return { legs, legSuccessors, legPredecessors };
+    return {legs, legSuccessors, legPredecessors};
   }
 }
