@@ -6,5 +6,6 @@
 .pnp
 .pnp.js
 /app/build
+/data/routing*
 coverage
 node_modules
