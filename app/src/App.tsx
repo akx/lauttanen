@@ -4,7 +4,7 @@ import { MultilegMachine } from "./lib/multileg";
 import * as datefns from "date-fns";
 import { MultilegTable } from "./components/MultilegTable";
 import { MultilegTimeline } from "./components/MultilegTimeline";
-import { defaultRoute, driveTravelTimes } from "./tribalKnowledge";
+import {defaultRouteStopNames, driveTravelTimes} from "./tribalKnowledge";
 import { Button, NonIdealState, Tab, Tabs } from "@blueprintjs/core";
 import { uniq } from "lodash";
 import { ConfigSection } from "./components/ConfigSection";
@@ -65,7 +65,12 @@ function ResultTabs(props: {
 function Core({ gtfsData }: { gtfsData: GTFSData }) {
   const [highlight, setHighlight] = React.useState<string | undefined>();
   const [startTime, setStartTime] = React.useState(() => new Date()); //new Date(2020, 3, 13, 12, 10, 0));
-  const [stopIds, setStopIds] = React.useState(() => [...defaultRoute]);
+  const [stopIds, setStopIds] = React.useState<string[]>(() => {
+    return defaultRouteStopNames.map(name => {
+      const stop = gtfsData.stops.find(stop => stop.stop_name.startsWith(name));
+      return (stop ? stop.stop_id : '');
+    });
+  });
   const [disembarkTimeMin, setDisembarkTimeMin] = React.useState(3);
   const [driveTimeMultiplier, setDriveTimeMultiplier] = React.useState(1.5);
   const [splitEnabled, setSplitEnabled] = React.useState(false);
