@@ -10,6 +10,7 @@ interface MultilegTableRowProps extends ViewProps {
   parentLeg?: Leg;
   depth: number;
   accumulatedDuration?: number;
+  accumulatedWait?: number;
 }
 
 function getLegTypeLogo(leg: Leg): string {
@@ -32,6 +33,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
     parentLeg,
     depth,
     accumulatedDuration,
+    accumulatedWait,
     result,
     highlight,
     setHighlight,
@@ -42,6 +44,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
     : undefined;
   const legDuration = datefns.differenceInMinutes(leg.endTime, leg.startTime);
   const newAccumulatedDuration = (accumulatedDuration || 0) + legDuration;
+  const newAccumulatedWait = (accumulatedWait || 0) + (wait || 0);
   let final = leg.next.length === 0;
   let initial = depth === 0;
   const classes: { [key: string]: boolean } = { initial, final };
@@ -75,7 +78,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
           </div>
         </td>
         <td className="dt adu">
-          {final ? <>{newAccumulatedDuration} min</> : null}
+          <>{newAccumulatedDuration} + {newAccumulatedWait} wait = {newAccumulatedDuration + newAccumulatedWait} min</>
         </td>
       </tr>
       {leg.next.map((childLeg, i) => (
@@ -86,6 +89,7 @@ function MultilegTableRow(props: MultilegTableRowProps) {
           key={i}
           depth={depth + 1}
           accumulatedDuration={newAccumulatedDuration}
+          accumulatedWait={newAccumulatedWait}
         />
       ))}
     </>
