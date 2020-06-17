@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lauttanen/static/css/main.8987017b.chunk.css",
-    "main.js": "/lauttanen/static/js/main.ba73a652.chunk.js",
-    "main.js.map": "/lauttanen/static/js/main.ba73a652.chunk.js.map",
+    "main.js": "/lauttanen/static/js/main.b5899234.chunk.js",
+    "main.js.map": "/lauttanen/static/js/main.b5899234.chunk.js.map",
     "runtime-main.js": "/lauttanen/static/js/runtime-main.af04d419.js",
     "runtime-main.js.map": "/lauttanen/static/js/runtime-main.af04d419.js.map",
     "static/css/2.fa04c573.chunk.css": "/lauttanen/static/css/2.fa04c573.chunk.css",
     "static/js/2.dacd603c.chunk.js": "/lauttanen/static/js/2.dacd603c.chunk.js",
     "static/js/2.dacd603c.chunk.js.map": "/lauttanen/static/js/2.dacd603c.chunk.js.map",
     "index.html": "/lauttanen/index.html",
-    "precache-manifest.be1e0a9520335259064c5641af1194d6.js": "/lauttanen/precache-manifest.be1e0a9520335259064c5641af1194d6.js",
+    "precache-manifest.ee8c42676bdd246621ea9fda1a45f8a3.js": "/lauttanen/precache-manifest.ee8c42676bdd246621ea9fda1a45f8a3.js",
     "service-worker.js": "/lauttanen/service-worker.js",
     "static/css/2.fa04c573.chunk.css.map": "/lauttanen/static/css/2.fa04c573.chunk.css.map",
     "static/css/main.8987017b.chunk.css.map": "/lauttanen/static/css/main.8987017b.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.fa04c573.chunk.css",
     "static/js/2.dacd603c.chunk.js",
     "static/css/main.8987017b.chunk.css",
-    "static/js/main.ba73a652.chunk.js"
+    "static/js/main.b5899234.chunk.js"
   ]
 }
