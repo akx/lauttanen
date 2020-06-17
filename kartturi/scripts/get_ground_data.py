@@ -1,3 +1,4 @@
+import os
 import json
 from typing import List
 
@@ -9,21 +10,24 @@ from kartturi.gtfs import read_gtfs
 from kartturi.haversine import haversine
 
 avg_speed_kmh = 60
+TRIPS_FILE = "data/routing-jobs.json"
+ROUTES_FILE = "data/routing-jobs-2.json"
 
 
 def main(generate_trips=False):
     gtfs_data = read_gtfs(config.app_data_dir)
-    if generate_trips:
+    if generate_trips or not os.path.isfile(TRIPS_FILE):
         extant_trips = get_extant_trips(gtfs_data)
         jobs = get_trip_jobs(gtfs_data, extant_trips)
-        with open("data/routing-jobs.json", "w") as f:
+        with open(TRIPS_FILE, "w") as f:
             json.dump(jobs, f)
     else:
-        with open("data/routing-jobs.json", "r") as f:
+        with open(TRIPS_FILE, "r") as f:
             jobs = json.load(f)
     get_routes(gtfs_data, jobs)
-    with open("data/routing-jobs-2.json", "w") as f:
+    with open(ROUTES_FILE, "w") as f:
         json.dump(jobs, f)
+        print("Wrote", f.name)
 
 
 def get_routes(gtfs_data, jobs: list):

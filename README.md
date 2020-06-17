@@ -15,3 +15,10 @@ Dev Usage
 * Update drive time data (this requires a Graphhopper server):
   * `python -m kartturi.scripts.get_ground_data`
   * `python -m kartturi.scripts.update_drive_times`
+
+### Graphhopper
+
+```
+wget http://download.geofabrik.de/europe/finland-latest.osm.pbf
+docker run -it -v (pwd):/data -v (pwd)/config.yml:/graphhopper/graphhopper.yml -p 8989:8989 graphhopper/graphhopper:latest /data/finland-latest.osm.pbf
+```
