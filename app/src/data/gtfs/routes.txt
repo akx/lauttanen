@@ -111,7 +111,7 @@ route_id,agency_id,route_long_name
 110,15,Suomenoja-Iso Vasikkasaari
 111,15,Suomenoja-Suinonsalmi-Pentala-Soukka
 112,16,Hakaniemi-Korkeasaari
-113,16,Kauppatori-Vallisaari-Isosaari
+113,16,Kauppatori-Isosaari
 114,1,Hakaniemi-Herttoniemi-Laajasalo-Vartiosaari-Kivisaari-Satamasaari-Iiluoto-Leikosaari-Vuosaari
 115,15,Suomenoja-Iso Vasikkasaari
 116,15,Haukilahti-Iso Vasikkasaari
