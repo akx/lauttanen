@@ -1,0 +1,367 @@
+stop_id,stop_name,stop_lon,stop_lat,geohash
+2,Parainen (keskusta),22.30131,60.30667,u6xz
+5,Nauvo (keskusta),21.90925,60.19270,u6xw
+16,Taivassalo,21.60325,60.56449,u6z2
+17,Merimasku,21.91350,60.45874,u6xx
+18,Naantali,22.03037,60.46380,u6xx
+23,Rymättylä,21.94708,60.37351,u6xx
+24,Korppoo (keskusta),21.56219,60.16282,u6xq
+26,Galtby tienhaara (Korppoo),21.59370,60.17907,u6xq
+27,Träsk (Houtskari),21.34276,60.21359,u6xn
+36,Mietoinen,21.91602,60.61727,u6z8
+37,Lieranta,21.86524,60.50735,u6z8
+572,Åva (Brändö),21.05598,60.50289,u6yb
+573,Vuosnainen (Kustavi),21.24713,60.50725,u6z0
+574,Jurmo,21.07432,60.51614,u6yb
+575,Lappo I,20.99573,60.31745,u6wz
+576,Asterholma,21.03483,60.30431,u6wz
+577,Björkö,20.94136,60.31103,u6wz
+578,Kumlinge,20.78939,60.29051,u6wy
+579,Enklinge,20.75129,60.31824,u6wz
+580,Snäckö,20.72639,60.21935,u6ww
+581,Seglinge,20.70974,60.21530,u6ww
+582,Sottunga,20.68211,60.11004,u6wt
+583,Husö,20.80742,60.06501,u6wv
+584,Kyrkogårdsö,20.82510,60.03043,u6wv
+585,Kökar,20.89308,59.94659,u6wv
+586,Överö P,20.51066,60.11145,u6wt
+587,Bergö,20.39294,60.16274,u6ww
+588,Svinö,20.26536,60.06687,u6wm
+589,Degerby (Föglö),20.38655,60.03174,u6wm
+590,Hummelvik (Vårdö),20.41328,60.22460,u6ww
+591,Lappo L,20.95230,60.31135,u6wz
+592,Överö E,20.52714,60.07662,u6wt
+593,Embarsund,20.52632,60.07430,u6wt
+594,Ängö,20.29458,60.15402,u6wq
+595,Långnäs P,20.28917,60.15313,u6wq
+596,Sandö,20.37359,60.32079,u6wr
+597,Simskäla,20.36522,60.33162,u6wr
+598,Prästö,20.27209,60.20814,u6wq
+599,Töftö,20.27784,60.20592,u6wq
+600,Torsholma L,21.03779,60.35719,u6wz
+601,Maarianhamina,19.92800,60.09246,u6wj
+602,Hammarland,19.73994,60.21654,u6wn
+603,Eckerö,19.53644,60.22549,u6ty
+604,Godby,19.99047,60.23166,u6wn
+605,Geta,19.84621,60.37743,u6wp
+606,Saltvik,20.06196,60.27574,u6wq
+607,Sund,20.08318,60.23811,u6wq
+608,Lemland,20.08739,60.06910,u6wm
+611,Risteys Svinövägen,20.25720,60.08591,u6wm
+612,Risteys Stickvägen,20.27222,60.10918,u6wm
+613,Risteys Vårdö,20.37354,60.24250,u6wq
+617,Risteys Sund,20.04142,60.24607,u6wq
+618,Risteys Maarianhamina,19.93383,60.11391,u6wj
+620,Risteys Kustavintie,21.39231,60.54656,u6z0
+621,Risteys Iniöntie,21.45716,60.53639,u6z2
+9216,Vaala,26.89824,64.34078,ue7n
+9217,Rääkkylä,29.56666,62.39058,uej4
+9214,Tirmo,25.89906,60.24652,uddq
+9215,Huikku (Hailuoto),25.06797,65.03748,ue9c
+9212,Kuparonvirta,27.84979,61.55486,udgy
+9213,Puutossalmi,27.75578,62.72235,ue5s
+9210,Puumala,28.17084,61.45293,uduj
+9211,Kortesalmi,27.84007,62.90561,ue5v
+9264,Maisaari,21.89396,60.33219,u6xx
+9265,Grönvik,22.59170,59.95782,ud8j
+9218,Lamposaari,28.31670,61.09632,udu5
+9219,Ruokolahti,28.34218,61.33002,uduh
+9133,Pensar I,22.13696,60.14801,u6xw
+9132,Ramsholm,22.18411,60.16999,u6xy
+9131,Kuggö,22.16133,60.14801,u6xy
+9130,Heisala,22.25901,60.17719,u6xy
+9137,Samsaari,21.82696,60.31843,u6xx
+9136,Ruotsalainen,21.76470,60.36786,u6xr
+9135,Pakinainen,21.68774,60.35513,u6xr
+9134,Korvenmaa,21.68108,60.36528,u6xr
+995,Brunskär,21.50115,60.04200,u6xm
+9139,Munninmaa,21.68130,60.42041,u6xr
+9138,Lailuoto,21.66654,60.45491,u6xr
+9225,Högsåra,22.36920,59.95463,u6xv
+9250,Esthamn,25.53676,60.23959,uddn
+992,Åselholm,21.22011,60.41551,u6xp
+9223,Svartnäs,22.39523,59.94913,u6xv
+928,Kalkkiranta,25.39166,60.25276,uddn
+929,Spjutsund,25.51057,60.27267,uddn
+9222,Olofsnäs (Norrskata),21.55870,60.21653,u6xq
+9289,Gumbostrand,25.29410,60.25556,ud9y
+9221,Hirvisalmi (saari),29.32563,63.27833,uehz
+9281,Granö,25.23837,60.23351,ud9y
+9280,Kamsholmen,25.26276,60.22094,ud9y
+9283,Opanholmen,25.29149,60.24368,ud9y
+9220,Enonkoski,28.97394,62.14808,ueh9
+9285,Box-Hangelby strand,25.38200,60.26886,uddn
+9287,Mattesö,25.32304,60.25936,uddn
+9286,Eriksnäs,25.34635,60.26905,uddn
+966,Stora Ängesö,22.50626,59.94969,ud8j
+9522,Pietolansaari,28.95010,61.66847,uduw
+9120,Peno,22.10190,60.14548,u6xw
+9121,Pensar L,22.10984,60.15115,u6xw
+9122,Rockelholm,21.88841,60.09985,u6xt
+9123,Sandholm,21.80932,59.90403,u6xs
+9124,Stenskär,22.04894,60.07130,u6xt
+9126,Trunsö,21.77262,59.88239,u6xk
+9127,Träskholm,21.74237,59.91343,u6xk
+9128,Ängsö,21.72365,60.10421,u6xm
+9129,Björkholm,22.23604,60.18520,u6xy
+9269,Östra Norrkullalandet,25.36876,60.23543,uddn
+969,Vänoxa,22.60884,59.97020,ud8j
+991,Ytterstö,21.26437,60.31594,u6xp
+9534,Ulkoluoto (Särkisalo),22.91457,60.04137,ud8m
+9276,Björkholmen,25.31506,60.23574,uddn
+993,Åvensor,21.57872,60.29823,u6xr
+9537,Mietinsaari,28.59906,61.24370,uduk
+9536,Sandö,22.06877,60.18113,u6xw
+9535,Lillandet E (Nauvo),22.06418,60.17999,u6xw
+963,Biskopsö,22.55970,59.97110,ud8j
+9533,Pettu,22.92314,60.03843,ud8m
+9532,Lillandet P (Nauvo),21.96964,60.19900,u6xw
+9531,Käldö,21.96815,60.20438,u6xw
+9530,Kokonsaari,28.73938,61.78202,udur
+990,Perkala P,21.47670,60.37946,u6xr
+9538,Äitsaari,28.61052,61.24843,uduk
+9201,Bergö,21.17711,62.94392,u7pn
+9199,Barölandet,23.87630,59.97720,ud8v
+9198,Långnäs (Hiittinen),22.44893,59.87270,u6xu
+9191,Palva I,21.67568,60.46788,u6xr
+9190,Näsby I (Houtskari),21.39576,60.21744,u6xn
+9193,Kokkila,22.94342,60.31809,ud8r
+9115,Knivskär,21.97564,60.01147,u6xt
+9114,Innamo,21.75249,60.24954,u6xq
+9117,Lökholm,21.88263,59.91240,u6xs
+9116,Kopparholm,21.90406,59.96798,u6xt
+9111,Grötö,22.01547,60.07993,u6xt
+9110,Byskär,21.97029,60.08426,u6xt
+9113,Hummelholm,21.79664,60.10082,u6xm
+9112,Gullkrona,22.08313,60.08831,u6xt
+9278,Sandholmen (Rösö),25.32479,60.22564,uddn
+9205,Kesamonsaari P,28.72850,61.81380,udur
+980,Södrö,21.29102,60.28309,u6xn
+9119,Nötö,21.75590,59.95381,u6xm
+9118,Nauvo,21.91189,60.19412,u6xw
+985,Kolko,21.40975,60.41865,u6xp
+9251,Simsalö,25.29055,60.23723,ud9y
+9207,Kervinen,27.91451,66.58027,uegf
+9256,Tveskiftsholm,21.74997,60.10570,u6xm
+9206,Tappuniemi,28.46650,62.20077,ueh1
+9257,Östra Tallholmen,22.16428,60.16022,u6xy
+9524,Laukansaari E,28.82796,61.80871,udur
+9527,Ahvionsaari,28.75139,61.70883,udur
+9520,Tappisaari,28.59888,61.74300,udur
+9254,Fagerholm,21.69839,60.11208,u6xm
+97,Houtsala (Norrskata),21.59888,60.25706,u6xq
+9523,Laukansaari P,28.83391,61.82959,udux
+9509,Haukkasalo L,25.36943,61.70476,udfp
+9255,Lånholm,21.74170,60.12137,u6xq
+9528,Ahvionniemi,28.75197,61.70668,udur
+9529,Kesamonsaari E,28.72753,61.79716,udur
+9245,Norra Bodö,25.45806,60.18437,uddn
+9244,Bodö,25.44117,60.18083,uddn
+9108,Borstö,21.96968,59.86201,u6xs
+9109,Brännskär,21.97543,60.08614,u6xt
+9241,Haapasaari,27.18640,60.28601,udeq
+9240,Kaunissaari,26.77647,60.34460,udep
+9243,Pirttisaari,25.42407,60.16466,uddn
+9242,Kirkonmaa,27.01415,60.40473,udep
+9102,Lillpensar,21.55141,60.24670,u6xq
+9103,Maskinnamo,21.63717,60.28332,u6xq
+9100,Käldersö,21.49637,60.16477,u6xq
+9101,Kälö,21.35332,60.07649,u6xj
+9106,Aspholm,22.17541,60.16563,u6xy
+9107,Berghamn,21.80205,60.05412,u6xt
+9104,Utö,21.36817,59.78651,u6xh
+9105,Österskär,21.29172,59.97894,u6xj
+933,Skåldö,23.47029,59.89315,ud8s
+9270,Norra norrkullalandet,25.34520,60.24044,uddn
+9247,Hamnholmen,25.42009,60.16208,uddn
+9519,Tuohisaari,28.61353,61.74781,udur
+9518,Ritosaari I,28.98412,61.77810,udux
+9246,Pirttisaari Ångbåtsbrygga,25.41902,60.16791,uddn
+9539,Haverö,22.07302,60.23083,u6xw
+9511,Kevätsalmi L,25.16858,62.71240,ue1u
+9510,Haukkasalo I,25.38968,61.70993,udfp
+9513,Sorpo,22.28216,60.15098,u6xy
+9512,Kevätsalmi I,25.17218,62.71078,ue1u
+9515,Jussilansalmi,28.11871,61.22261,udgu
+9282,Björnsö,25.23834,60.25007,ud9y
+9252,Björkö,21.69187,59.91393,u6xk
+9516,Jänkäsalo,28.12893,61.22599,uduh
+970,Vänö,22.19669,59.86805,u6xu
+960,Haapala (Rymättylä),21.80920,60.39468,u6xx
+9258,Torsholma,21.07107,60.36369,u6wz
+9259,Lempmo,21.26675,60.31938,u6xp
+964,Bolax,22.71021,59.94583,ud8j
+965,Holma,22.36672,59.90792,u6xu
+9179,Sävi,28.49774,61.73839,udur
+9178,Uittoniemi,28.46624,62.20365,ueh1
+9177,Lappeenranta,28.32358,61.09655,udu5
+9176,Anttola,27.84576,61.55430,udgy
+9175,Koivukanta,28.72770,61.82017,udur
+9174,Hätinvirta,28.16735,61.45197,uduj
+9173,Liperi,29.57122,62.39421,uej4
+9172,Hanhivirta,28.97211,62.14958,ueh9
+9171,Vaajasalo,27.83637,62.90575,ue5v
+9170,Soisalo,27.76405,62.72041,ue5s
+9203,Ruokoniemi,28.50321,61.73820,udur
+9249,Skyttenskär,25.38922,60.21601,uddn
+9508,Paanalansalmi P,26.30669,62.35412,ue4d
+9253,Krok,21.73560,60.12738,u6xq
+9248,Tredjeholmen,25.45432,60.18726,uddn
+9182,Taipalsaari,28.34264,61.32595,uduh
+9183,Ängholm,21.88025,60.16708,u6xw
+9180,Lieviskä,28.58648,61.55164,uduq
+9181,Viljakansaari,28.38542,61.60428,udun
+9186,Skåldö (saari),23.51119,59.92708,ud8s
+9184,Mielisholm,22.30655,60.21530,u6xy
+9185,Palva L,21.64831,60.46122,u6xr
+9507,Paanalansalmi E,26.30983,62.35202,ue4d
+9502,Pängätsalo E,26.21221,62.85916,ue4t
+9503,Pikkarala,25.79350,64.92189,ued3
+9202,Bredskar,21.18687,62.93453,u7pn
+9521,Saukonsaari,28.95739,61.66848,uduw
+997,Finnö,21.50937,60.18082,u6xq
+983,Jumo I,21.39367,60.42111,u6xp
+994,Aspö,21.61423,59.95155,u6xm
+999,Järvsor,21.69591,60.26128,u6xq
+998,Jurmo,21.58480,59.82710,u6xk
+9168,Manamansalo,26.91120,64.34401,ue7n
+9169,Hirvisalmi (manner),29.31744,63.27740,uehz
+9229,Djupö,22.56028,59.95655,ud8j
+9164,Pellinki,25.90258,60.24501,uddq
+9165,Kaskinen,21.21958,62.38306,u7p4
+9166,Räisälä,27.92265,66.57874,uegf
+9162,Orslandet (Barösund),23.87991,59.97588,ud8v
+9163,Skåldö (manner),23.50747,59.93064,ud8s
+911,Kirjais (Nauvo),22.01835,60.12138,u6xw
+917,Mattnäs (Nauvo),21.81134,60.13778,u6xw
+9271,Västra norrkullalandet,25.32575,60.23774,uddn
+9272,Komsalö,25.35299,60.24119,uddn
+9273,Bärgarholmen,25.35578,60.25443,uddn
+9274,Sandholmen,25.35964,60.25984,uddn
+9501,Pängätsalo P,26.23691,62.86497,ue4t
+9275,Östra söderkullalandet,25.32698,60.24781,uddn
+9150,Angelniemi,22.94395,60.31282,ud8r
+9155,Saverkeit,21.40312,60.21680,u6xn
+9159,Våno,22.30388,60.21690,u6xy
+9158,Velkuanmaa,21.63658,60.45505,u6xr
+962,Bergö,22.60811,59.96473,ud8j
+9277,Stora svedjeholmen,25.32819,60.22754,uddn
+982,Äpplö,21.21937,60.31007,u6xp
+9238,Kuusinen (Kotka),26.96459,60.46148,udep
+9239,Kuutsalo,27.00884,60.44095,udep
+9279,Rösö,25.30388,60.22360,ud9y
+9233,Riuttu (Oulunsalo),25.19623,65.00895,ue9c
+986,Kvarnholm,21.19811,60.39221,u6xp
+987,Lammholm,21.31451,60.33774,u6xp
+9322,Ytterstholm,21.92657,60.11959,u6xw
+95,Havträsk (Norrskata),21.56377,60.23534,u6xq
+9144,Liettinen,21.75440,60.42382,u6xr
+9145,Verkan (Korppoo),21.55656,60.17458,u6xq
+9142,Talosmeri,21.68163,60.45703,u6xr
+9204,Eskilsö,21.21596,62.38305,u7p4
+9140,Rauhala,21.69775,60.44885,u6xr
+9141,Salavainen,21.70869,60.43152,u6xr
+9209,Rongonsalmi,28.57979,61.55152,uduq
+9208,Kietävälä,28.38610,61.60908,udun
+9148,Grännäs,21.87884,60.16973,u6xw
+976,Nåtö,21.15719,60.34121,u6xp
+975,Luk,21.32029,60.15149,u6xn
+974,Lempnäs,21.29457,60.30219,u6xp
+973,Härklot,21.17876,60.35589,u6xp
+972,Bockholm,21.19088,60.31457,u6xp
+971,Berghamn,21.30336,60.14888,u6xn
+968,Tunnhamn,22.18348,59.92826,u6xu
+996,Elvsö,21.48044,60.13851,u6xq
+979,Storpensar,21.50859,60.23247,u6xq
+978,Själö,21.17349,60.37486,u6xp
+92,Granvik (Parainen),22.26162,60.19652,u6xy
+9263,Pähkinäinen,21.69504,60.33021,u6xr
+9504,Lapinkangas,25.79695,64.92301,ued3
+9262,Tammisluoto,21.73779,60.41078,u6xr
+9261,Kettumaa,21.69034,60.40343,u6xr
+9514,Attu,22.28546,60.15046,u6xy
+989,Perkala E,21.47411,60.36728,u6xr
+9260,Salmis,21.28665,60.32056,u6xp
+9517,Ritosaari L,28.98237,61.77697,udux
+9267,Helsingholm,22.28237,60.03071,u6xv
+967,Taalintehdas (Kemiönsaari),22.50620,60.01908,ud8j
+9266,Bötesö,22.61023,59.94487,ud8j
+38,Läntinen Rantakatu 37,22.25059,60.44305,u6xz
+9541,Korkeasaari,24.97933,60.17495,ud9y
+9544,Kivenlahden saaristovenelaituri,24.62132,60.15665,ud9w
+9545,Matinkylän saaristovenelaituri,24.75536,60.14829,ud9w
+9546,Otaniemen saaristovenelaituri,24.83873,60.18569,ud9w
+9547,Pentalan saaristovenelaituri,24.67456,60.10714,ud9t
+9548,Ristiniemen saaristovenelaituri,24.64386,60.13704,ud9w
+9549,Suomenojan saaristovenelaituri,24.72002,60.14573,ud9w
+9550,Suinonsalmen saaristovenelaituri,24.69628,60.12806,ud9w
+9551,Soukan saaristovenelaituri,24.64813,60.13508,ud9w
+9552,Iso Vasikkasaari,24.76186,60.14313,ud9w
+9553,Stora Herrö,24.66551,60.08883,ud9t
+9554,Rövaren,24.68275,60.08569,ud9t
+9555,Gåsgrundet,24.74876,60.09436,ud9t
+9557,Isosaari,25.06237,60.10579,ud9v
+9558,Herttoniemen saaristovenelaituri,25.03244,60.18492,ud9y
+9561,Kivisaari,25.11855,60.17460,ud9y
+9562,Iiluoto,25.12922,60.18162,ud9y
+9563,Satamasaari,25.11875,60.17926,ud9y
+9564,Leikosaari,25.15264,60.17114,ud9y
+9565,Vuosaaren saaristovenelaituri,25.14665,60.19974,ud9y
+9567,Vasikkasaari,25.01594,60.15243,ud9y
+9568,Lonna,24.99031,60.15498,ud9y
+9569,Tykistölahti,24.98764,60.14512,ud9y
+9570,Kuninkaanportti,24.98987,60.13996,ud9y
+9572,Kaunissaari (Sipoo),25.34541,60.17367,uddn
+9573,Kalkkihiekantorin laivalaituri,25.14090,60.19931,ud9y
+9576,Merisatama,24.94193,60.15358,ud9w
+9577,Sirpalesaari,24.94108,60.15198,ud9w
+9579,Valkosaari,24.96311,60.16118,ud9y
+9581,Pihlajasaari,24.91621,60.14020,ud9w
+9582,Ruoholahti (Kellosaaren laituri),24.91165,60.16153,ud9w
+9584,Stansvik,25.02846,60.16277,ud9y
+9585,Jollas (Villinginsalmenpolku),25.09174,60.15960,ud9y
+9586,Kompassitorin laituri,24.95030,60.15521,ud9w
+9587,Uunisaari,24.95225,60.15361,ud9w
+9590,Meripuiston laituri,24.94637,60.15452,ud9w
+9591,Vallisaari,25.00700,60.14034,ud9y
+c610,Långnäs E/Ahvenanmaa,20.29996,60.11700,u6wm
+c25,Korpoström (Korppoo),21.60017,60.11099,u6xm
+c8,Kittuis (Houtskari),21.43839,60.18680,u6xn
+c9,Roslax (Houtskari),21.33487,60.23353,u6xn
+c10,Kivimo (Houtskari),21.33572,60.23510,u6xn
+c11,Mossala sund (Houtskari)/Mossala E (Houtskari),21.40595,60.26884,u6xn
+c28,Näsby (Houtskari),21.36999,60.22361,u6xn
+c30,Björkö (Houtskari),21.40590,60.26564,u6xn
+c31,Mossala (Houtskari)/Mossala P (Houtskari),21.43938,60.28882,u6xn
+c12,Dalen (Iniö),21.37147,60.38154,u6xp
+c13,Norrby (Iniö),21.38855,60.39698,u6xp
+c14,Jumo (Iniö)/Jumo E (Iniö),21.36998,60.41156,u6xp
+c32,Skagen (Iniö),21.36854,60.40615,u6xp
+c33,Kannvik (Iniö),21.39639,60.43928,u6xp
+c981,Södö/Södö ramppi,21.19741,60.32646,u6xp
+c984,Keistiö,21.34940,60.37237,u6xp
+c6,Retais (Korppoo),21.69135,60.16592,u6xq
+c7,Galtby (Korppoo),21.58564,60.18545,u6xq
+c29,Pärnäs (Nauvo),21.70506,60.16400,u6xq
+c35,Teersalo,21.69385,60.46736,u6xr
+c910,Kasnäs (Kemiönsaari)/Kasnäs,22.41186,59.92113,u6xu
+c3,Lillmälö (Parainen),22.11259,60.23544,u6xw
+c4,Prostvik (Nauvo),22.09805,60.22246,u6xw
+c19,Seili,21.95513,60.23644,u6xw
+c20,Hanka (Rymättylä),21.96897,60.28579,u6xw
+c21,Hämmärönsalmi (Aasla)/Aasla,21.96154,60.31380,u6xx
+c22,Hämmärönsalmi (Airismaa),21.96333,60.31624,u6xx
+c1,Turku,22.26846,60.45693,u6xz
+c15,Heponiemi (Kustavi),21.43490,60.48527,u6z0
+c609,Vartsala (Kustavi),21.31923,60.54096,u6z0
+c619,Kivimaa (Kustavi),21.33641,60.54264,u6z0
+c34,Hakkenpää,21.61358,60.49923,u6z2
+c9401,Espoo/Haukilahden saaristovenelaituri,24.77091,60.15519,ud9w
+c9400,Helsinki/Kauppatori (Korkeasaaren laituri)/Kauppatori (Isosaaren laituri)/Kauppatori (Kolera-allas)/Kauppatori (Laituripaikka 4),24.95436,60.16712,ud9w
+c9542,Hakaniemi (Saaristoliikennelaituri)/Hakaniemen laituri,24.95496,60.17773,ud9w
+c9588,Liuskasaari/Liuskaluoto,24.94679,60.15243,ud9w
+c9559,Laajasalon saaristovenelaituri/Vartiosaari,25.06802,60.17967,ud9y
+c9574,Ehrenströmintie (Klippanin laituri)/Klippan/Ehrenströmintie (Valkosaaren laituri),24.96210,60.15965,ud9y
+c9268,Majholmen,25.45908,60.25768,uddn
+c9525,Kongonsaari I/Kongonsaari L,29.06631,61.68346,uduw
+c9505,Kellolampi P/Kellolampi E,27.77887,65.37160,ueeg

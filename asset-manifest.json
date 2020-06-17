@@ -1,34 +1,34 @@
 {
   "files": {
     "main.css": "/lauttanen/static/css/main.8987017b.chunk.css",
-    "main.js": "/lauttanen/static/js/main.6adf793c.chunk.js",
-    "main.js.map": "/lauttanen/static/js/main.6adf793c.chunk.js.map",
+    "main.js": "/lauttanen/static/js/main.ba73a652.chunk.js",
+    "main.js.map": "/lauttanen/static/js/main.ba73a652.chunk.js.map",
     "runtime-main.js": "/lauttanen/static/js/runtime-main.af04d419.js",
     "runtime-main.js.map": "/lauttanen/static/js/runtime-main.af04d419.js.map",
     "static/css/2.fa04c573.chunk.css": "/lauttanen/static/css/2.fa04c573.chunk.css",
-    "static/js/2.4ab9ea9e.chunk.js": "/lauttanen/static/js/2.4ab9ea9e.chunk.js",
-    "static/js/2.4ab9ea9e.chunk.js.map": "/lauttanen/static/js/2.4ab9ea9e.chunk.js.map",
+    "static/js/2.dacd603c.chunk.js": "/lauttanen/static/js/2.dacd603c.chunk.js",
+    "static/js/2.dacd603c.chunk.js.map": "/lauttanen/static/js/2.dacd603c.chunk.js.map",
     "index.html": "/lauttanen/index.html",
-    "precache-manifest.ee425f4973fcc0afcc9b2af2e9528bdf.js": "/lauttanen/precache-manifest.ee425f4973fcc0afcc9b2af2e9528bdf.js",
+    "precache-manifest.be1e0a9520335259064c5641af1194d6.js": "/lauttanen/precache-manifest.be1e0a9520335259064c5641af1194d6.js",
     "service-worker.js": "/lauttanen/service-worker.js",
     "static/css/2.fa04c573.chunk.css.map": "/lauttanen/static/css/2.fa04c573.chunk.css.map",
     "static/css/main.8987017b.chunk.css.map": "/lauttanen/static/css/main.8987017b.chunk.css.map",
-    "static/js/2.4ab9ea9e.chunk.js.LICENSE.txt": "/lauttanen/static/js/2.4ab9ea9e.chunk.js.LICENSE.txt",
-    "static/media/agency.txt": "/lauttanen/static/media/agency.d9438b70.txt",
-    "static/media/calendar.txt": "/lauttanen/static/media/calendar.0b493ac7.txt",
-    "static/media/calendar_dates.txt": "/lauttanen/static/media/calendar_dates.9aefd69f.txt",
-    "static/media/frequencies.txt": "/lauttanen/static/media/frequencies.16dfdd58.txt",
+    "static/js/2.dacd603c.chunk.js.LICENSE.txt": "/lauttanen/static/js/2.dacd603c.chunk.js.LICENSE.txt",
+    "static/media/agency.txt": "/lauttanen/static/media/agency.e3fe3559.txt",
+    "static/media/calendar.txt": "/lauttanen/static/media/calendar.71341278.txt",
+    "static/media/calendar_dates.txt": "/lauttanen/static/media/calendar_dates.f273cdc8.txt",
+    "static/media/frequencies.txt": "/lauttanen/static/media/frequencies.fb971eb9.txt",
     "static/media/blueprint-icons.css": "/lauttanen/static/media/icons-20.cef8cdbb.woff",
-    "static/media/routes.txt": "/lauttanen/static/media/routes.20f1bb24.txt",
-    "static/media/stop_times.txt": "/lauttanen/static/media/stop_times.ac2e9e5a.txt",
-    "static/media/stops.txt": "/lauttanen/static/media/stops.013405fc.txt",
-    "static/media/trips.txt": "/lauttanen/static/media/trips.9e713600.txt"
+    "static/media/routes.txt": "/lauttanen/static/media/routes.69a02baf.txt",
+    "static/media/stop_times.txt": "/lauttanen/static/media/stop_times.ea3ed20e.txt",
+    "static/media/stops.txt": "/lauttanen/static/media/stops.d8863e08.txt",
+    "static/media/trips.txt": "/lauttanen/static/media/trips.703ef61b.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.af04d419.js",
     "static/css/2.fa04c573.chunk.css",
-    "static/js/2.4ab9ea9e.chunk.js",
+    "static/js/2.dacd603c.chunk.js",
     "static/css/main.8987017b.chunk.css",
-    "static/js/main.6adf793c.chunk.js"
+    "static/js/main.ba73a652.chunk.js"
   ]
 }
