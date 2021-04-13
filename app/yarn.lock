@@ -9137,10 +9137,10 @@ vis-data@^6.5.1:
   resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-6.5.1.tgz#cd11f8bbf4a17064559b7c75532c3d6f419ff290"
   integrity sha512-bOIG0REskXot0JbuAYLFRR61xf4ls+nIYNnZ7X04iq2y/Vrg896A/bfquQjhsERZipOmCgllAR0d58OGyo9s0g==
 
-vis-timeline@^7.3.4:
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/vis-timeline/-/vis-timeline-7.3.4.tgz#b8db26267c0fb97d9c9055c53831cf4068c6dbe2"
-  integrity sha512-NWO2aMtdekyLqUu9/34Uqj5vRQnhYqHSmNMB4siqq1TySPRNSD/nZtYHSYWF+iGLshJmOaaJ0si/PrHsdAyYkQ==
+vis-timeline@^7.4.4:
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/vis-timeline/-/vis-timeline-7.4.4.tgz#9d52885fa6e098f0860dd9a4f712691b7a222d98"
+  integrity sha512-L7SAIjMuccBl476ByskJbm4KLUIzxwflQ/zIL2WcaLgtdedyza+VLB+MVOv/RwavpdHCUY7ygLJ77cKe4dPzIg==
 
 vis-util@^4.0.0:
   version "4.0.0"
