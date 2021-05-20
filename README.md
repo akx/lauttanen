@@ -10,6 +10,8 @@ Acknowledgments
 Dev Usage
 ---------
 
+* Run `make` to download and extract raw GTFS data:
+  * `make`
 * Filter the raw GTFS data into a non-historical subset and cluster same stops:  
   * `python -m kartturi.scripts.filter_data`
 * Update drive time data (this requires a Graphhopper server):

@@ -1,7 +1,7 @@
 stop_id,stop_name,stop_lon,stop_lat,geohash
 2,Parainen (keskusta),22.30131,60.30667,u6xz
 5,Nauvo (keskusta),21.90925,60.19270,u6xw
-16,Taivassalo,21.60325,60.56449,u6z2
+16,Taivassalo,21.60325,60.56450,u6z2
 17,Merimasku,21.91350,60.45874,u6xx
 18,Naantali,22.03037,60.46380,u6xx
 23,Rymättylä,21.94708,60.37351,u6xx
@@ -288,9 +288,7 @@ stop_id,stop_name,stop_lon,stop_lat,geohash
 9266,Bötesö,22.61023,59.94487,ud8j
 38,Läntinen Rantakatu 37,22.25059,60.44305,u6xz
 9541,Korkeasaari,24.97933,60.17495,ud9y
-9544,Kivenlahden saaristovenelaituri,24.62132,60.15665,ud9w
 9545,Matinkylän saaristovenelaituri,24.75536,60.14829,ud9w
-9546,Otaniemen saaristovenelaituri,24.83873,60.18569,ud9w
 9547,Pentalan saaristovenelaituri,24.67456,60.10714,ud9t
 9548,Ristiniemen saaristovenelaituri,24.64386,60.13704,ud9w
 9549,Suomenojan saaristovenelaituri,24.72002,60.14573,ud9w
@@ -324,6 +322,7 @@ stop_id,stop_name,stop_lon,stop_lat,geohash
 9587,Uunisaari,24.95225,60.15361,ud9w
 9590,Meripuiston laituri,24.94637,60.15452,ud9w
 9591,Vallisaari,25.00700,60.14034,ud9y
+9595,Katajanokanluoto,24.98224,60.16235,ud9y
 c610,Långnäs E/Ahvenanmaa,20.29996,60.11700,u6wm
 c25,Korpoström (Korppoo),21.60017,60.11099,u6xm
 c8,Kittuis (Houtskari),21.43839,60.18680,u6xn
@@ -357,8 +356,10 @@ c609,Vartsala (Kustavi),21.31923,60.54096,u6z0
 c619,Kivimaa (Kustavi),21.33641,60.54264,u6z0
 c34,Hakkenpää,21.61358,60.49923,u6z2
 c9401,Espoo/Haukilahden saaristovenelaituri,24.77091,60.15519,ud9w
-c9400,Helsinki/Kauppatori (Korkeasaaren laituri)/Kauppatori (Isosaaren laituri)/Kauppatori (Kolera-allas)/Kauppatori (Laituripaikka 4),24.95436,60.16712,ud9w
+c9400,Helsinki/Kauppatori (Korkeasaaren laituri)/Kauppatori (Isosaaren laituri)/Kauppatori (Kolera-allas)/Kauppatori (Laituripaikka 4)/Kauppatori (Katajanokanluodon laituri),24.95413,60.16706,ud9w
 c9542,Hakaniemi (Saaristoliikennelaituri)/Hakaniemen laituri,24.95496,60.17773,ud9w
+c9544,Kivenlahden saaristovenelaituri (Marinsatama)/Kivenlahden saaristovenelaituri,24.62132,60.15665,ud9w
+c9546,Otaniemen saaristovenelaituri (Otaranta)/Otaniemen saaristovenelaituri,24.83873,60.18570,ud9w
 c9588,Liuskasaari/Liuskaluoto,24.94679,60.15243,ud9w
 c9559,Laajasalon saaristovenelaituri/Vartiosaari,25.06802,60.17967,ud9y
 c9574,Ehrenströmintie (Klippanin laituri)/Klippan/Ehrenströmintie (Valkosaaren laituri),24.96210,60.15965,ud9y

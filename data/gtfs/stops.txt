@@ -373,9 +373,9 @@ stop_id,stop_name,stop_desc,zone_id,stop_url,stop_lon,stop_lat
 9541,Korkeasaari,,,,24.979329,60.174952
 9542,Hakaniemi (Saaristoliikennelaituri),,,,24.954964,60.177732
 9543,Haukilahden saaristovenelaituri,,,,24.7709117312781,60.1551908236559
-9544,Kivenlahden saaristovenelaituri,,,,24.621322,60.156648
+9544,Kivenlahden saaristovenelaituri (Marinsatama),,,,24.621322,60.156648
 9545,Matinkylän saaristovenelaituri,,,,24.7553570828167,60.1482944858266
-9546,Otaniemen saaristovenelaituri,,,,24.838728,60.185695
+9546,Otaniemen saaristovenelaituri (Otaranta),,,,24.838728,60.185695
 9547,Pentalan saaristovenelaituri,,,,24.674558,60.107143
 9548,Ristiniemen saaristovenelaituri,,,,24.643861,60.137037
 9549,Suomenojan saaristovenelaituri,,,,24.720015,60.145733
@@ -420,3 +420,7 @@ stop_id,stop_name,stop_desc,zone_id,stop_url,stop_lon,stop_lat
 9589,Liuskaluoto,,,,24.946512,60.15301
 9590,Meripuiston laituri,,,,24.946372,60.154522
 9591,Vallisaari,,,,25.006997,60.140344
+9592,Otaniemen saaristovenelaituri,,,,24.838728,60.185695
+9593,Kivenlahden saaristovenelaituri,,,,24.621322,60.156648
+9594,Kauppatori (Katajanokanluodon laituri),,,,24.952987,60.166777
+9595,Katajanokanluoto,,,,24.982239,60.162349

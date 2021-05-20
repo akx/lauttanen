@@ -106,13 +106,12 @@ route_id,agency_id,route_long_name
 105,2,Maarianhamina-Lemland-Lumparland
 106,14,Turku-Seili-Nauvo
 107,16,Kauppatori-Korkeasaari
-108,15,Otaniemi-Haukilahti-Matinkylä-Iso Vasikkasaari-Suomenoja-Stora Herrö-Rövaren-Gåsgrundet
 109,15,Kivenlahti-Ristiniemi-Soukka-Pentala-Suinonsalmi-Gåsgrundet-Rövaren-Stora Herrö
 110,15,Suomenoja-Iso Vasikkasaari
 111,15,Suomenoja-Suinonsalmi-Pentala-Soukka
 112,16,Hakaniemi-Korkeasaari
 113,16,Kauppatori-Isosaari
-114,1,Hakaniemi-Herttoniemi-Laajasalo-Vartiosaari-Kivisaari-Satamasaari-Iiluoto-Leikosaari-Vuosaari
+114,16,Hakaniemi-Herttoniemi-Laajasalo-Vartiosaari-Kivisaari-Satamasaari-Iiluoto-Leikosaari-Vuosaari
 115,15,Suomenoja-Iso Vasikkasaari
 116,15,Haukilahti-Iso Vasikkasaari
 117,15,Nokkala-Iso Vasikkasaari
@@ -121,7 +120,7 @@ route_id,agency_id,route_long_name
 120,18,Kauppatori-Lonna-Vallisaari-Suomenlinna-Lonna
 121,18,Hakaniemi-Suomenlinna
 122,18,Kauppatori-Vallisaari-Suomenlinna-Lonna
-123,18,Hakaniemi-Suomenlinna-Vallisaari-Vasikkasaari
+123,18,Hakaniemi-Lonna-Suomenlinna-Vallisaari
 124,18,Kauppatori-Lonna-Suomenlinna
 125,19,Klippanin yhteysvene
 126,19,Sirpalesaaren yhteysvene
@@ -129,7 +128,8 @@ route_id,agency_id,route_long_name
 128,21,Valkosaaren yhteysvene
 129,20,Merisatama-Pihlajasaari
 130,20,Ruoholahti-Pihlajasaari
-131,22,Merisatama-Sirpalesaari
+131,22,Merisatama-Sirpalesaari (vanha)
 132,23,Kauppatori-Vasikkasaari-Stansvik-Jollas
 133,17,Vuosaari-Kaunissaari
-134,1,Soukka-Pentala
+134,15,Soukka-Pentala
+135,25,Kauppatori-Katajanokanluoto

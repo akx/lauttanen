@@ -30,5 +30,5 @@ function loadRawDataRequire(): Promise<RawGTFSData> {
 
 export async function getFilteredGTFSData() {
   const rawData = await loadRawDataRequire();
-  return filterAndAugmentRawData(rawData, new Date(2020, 0));
+  return filterAndAugmentRawData(rawData, new Date(2021, 0));
 }

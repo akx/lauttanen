@@ -21,3 +21,4 @@ agency_id,agency_name,agency_url,agency_timezone,agency_email,agency_phone,agenc
 22,Ferra Oy,http://www.ferra.fi,Europe/Helsinki,,0503401512,http://www.ferra.fi
 23,City Cruisers,http://www.citycruisers.fi,Europe/Helsinki,pekka.haltia@welho.com,0400 -216795,http://www.citycruisers.fi
 24,Aava Lines Oy,https://aavalines.fi/,Europe/Helsinki,myynti@aavalines.fi,0406708845,https://aavalines.fi/fi_FI/categories/3-reittiliikenne/products/153-aavalines-edestakainen-matkalippu-pentalan-iltaliikenne
+25,Helsingin Risteilypalvelut/TMSJ Group Oy,https://katajanokanluoto.fi,Europe/Helsinki,info@katajanokanluoto.fi,0500 102 111,https://katajanokanluoto.fi

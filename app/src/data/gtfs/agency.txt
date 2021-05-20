@@ -19,3 +19,4 @@ agency_id,agency_name,agency_url,agency_timezone
 21,NJK Blekholmen,http://www.njk.fi,Europe/Helsinki
 22,Ferra Oy,http://www.ferra.fi,Europe/Helsinki
 23,City Cruisers,http://www.citycruisers.fi,Europe/Helsinki
+25,Helsingin Risteilypalvelut/TMSJ Group Oy,https://katajanokanluoto.fi,Europe/Helsinki
