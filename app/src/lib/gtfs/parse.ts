@@ -13,7 +13,7 @@ export async function parseMultipleUrls<T extends object>(urlMap: {
     const text = (await resp.text()).replace(/[\r\n]+/g, "\n").trim();
     const result = papaparse.parse(text, {
       header: true,
-      delimiter: ',',
+      delimiter: ",",
     });
     if (result.errors?.length) console.warn(key, result.errors);
     return [key, result.data];

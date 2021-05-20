@@ -78,7 +78,10 @@ function MultilegTableRow(props: MultilegTableRowProps) {
           </div>
         </td>
         <td className="dt adu">
-          <>{newAccumulatedDuration} + {newAccumulatedWait} wait = {newAccumulatedDuration + newAccumulatedWait} min</>
+          <>
+            {newAccumulatedDuration} + {newAccumulatedWait} wait ={" "}
+            {newAccumulatedDuration + newAccumulatedWait} min
+          </>
         </td>
       </tr>
       {leg.next.map((childLeg, i) => (

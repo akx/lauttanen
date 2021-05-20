@@ -1,12 +1,11 @@
-import {GTFSData, Trip} from "./gtfs/types";
-import {getValidTripsForStopPair} from "./gtfs/trips";
+import { GTFSData, Trip } from "./gtfs/types";
+import { getValidTripsForStopPair } from "./gtfs/trips";
 import {
   dateToDaySeconds,
   hmsStringToDaySeconds,
   hmsStringToTriple,
 } from "./time";
 import * as datefns from "date-fns";
-import {start} from "repl";
 
 export type InterstopMap = { [pair: string]: number };
 
@@ -92,7 +91,10 @@ export class MultilegMachine {
     return `${stop1.stop_name} -> ${stop2.stop_name}`;
   }
 
-  private computeMultilegBitRecur(startTime: Date, legs: Readonly<LegFromToList>): Leg[] {
+  private computeMultilegBitRecur(
+    startTime: Date,
+    legs: Readonly<LegFromToList>
+  ): Leg[] {
     if (!legs.length) {
       return [];
     }
@@ -112,7 +114,6 @@ export class MultilegMachine {
     const driveNext = this._findDrive(startTime, stopId1, stopId2, nextLegs);
     if (driveNext !== undefined) return driveNext;
 
-
     return [
       {
         id: `${stopId1}-${stopId2}-${+startTime}-error`,
@@ -127,7 +128,12 @@ export class MultilegMachine {
     ];
   }
 
-  private _findFerry(startTime: Date, stopId1: string, stopId2: string, nextLegs: Readonly<LegFromToList>): Leg[] | undefined {
+  private _findFerry(
+    startTime: Date,
+    stopId1: string,
+    stopId2: string,
+    nextLegs: Readonly<LegFromToList>
+  ): Leg[] | undefined {
     const ferryTrips = computeSingleLeg(
       this.gtfsData,
       startTime,
@@ -149,8 +155,8 @@ export class MultilegMachine {
         seconds: ds,
       });
       const tripEnd = datefns.add(
-        datefns.set(startTime, {hours: ah, minutes: am, seconds: as}),
-        {minutes: this.disembarkTimeMin}
+        datefns.set(startTime, { hours: ah, minutes: am, seconds: as }),
+        { minutes: this.disembarkTimeMin }
       );
       return {
         id: `${trip.trip_id}`,
@@ -165,7 +171,12 @@ export class MultilegMachine {
     });
   }
 
-  private _findDrive(startTime: Date, stopId1: string, stopId2: string, nextLegs: Readonly<LegFromToList>): Leg[] | undefined {
+  private _findDrive(
+    startTime: Date,
+    stopId1: string,
+    stopId2: string,
+    nextLegs: Readonly<LegFromToList>
+  ): Leg[] | undefined {
     const stopsKey = `${stopId1},${stopId2}`;
     if (!this.driveTimes[stopsKey]) {
       return undefined;
@@ -173,13 +184,12 @@ export class MultilegMachine {
     const multipliers = nextLegs.length > 0 ? this.driveMultipliers : [1];
     return multipliers.map((mul) => {
       const minutes = this.driveTimes[stopsKey] * mul;
-      const endTime = datefns.add(startTime, {minutes});
+      const endTime = datefns.add(startTime, { minutes });
       const leg: Leg = {
         id: `${stopId1}-${stopId2}-${+startTime}-${+endTime}`,
         type: LegType.DRIVE,
         text: this.describeTrip(stopId1, stopId2),
-        remark:
-          mul !== 1 ? `${mul.toFixed(1)}x traffic adjustment` : undefined,
+        remark: mul !== 1 ? `${mul.toFixed(1)}x traffic adjustment` : undefined,
         startTime,
         endTime,
         startStopId: stopId1,
@@ -213,6 +223,6 @@ export class MultilegMachine {
         thisLegSuccessors.add(legId);
       });
     });
-    return {legs, legSuccessors, legPredecessors};
+    return { legs, legSuccessors, legPredecessors };
   }
 }

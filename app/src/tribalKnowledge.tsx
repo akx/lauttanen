@@ -1,4 +1,4 @@
-import {InterstopMap} from "./lib/multileg";
+import { InterstopMap } from "./lib/multileg";
 import rawDriveTimeData from "./data/drive-times.json";
 
 export const defaultRouteStopNames = [
