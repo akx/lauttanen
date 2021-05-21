@@ -91,7 +91,7 @@ export function MultilegGraph({ gtfsData, result }: ViewProps) {
         {
           selector: "edge.ferry",
           style: {
-            "line-color": "navy",
+            "line-color": "#2e86de",
           },
         },
       ]}
