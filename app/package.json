@@ -38,9 +38,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-and-deploy-and-push": "yarn build && yarn deploy && git push origin gh-pages:gh-pages",
-    "deploy": "ghpg -d build -j"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -62,7 +60,6 @@
     "@types/date-fns": "^2.6.0",
     "@types/lodash": "^4.14.169",
     "@types/papaparse": "^5.2.5",
-    "ghpg": "^2.0.0",
     "prettier": "^2.3.0"
   }
 }
