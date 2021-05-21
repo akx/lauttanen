@@ -88,7 +88,7 @@ export class MultilegMachine {
   private describeTrip(stopId1: string, stopId2: string) {
     const stop1 = this.gtfsData.stopMap[stopId1];
     const stop2 = this.gtfsData.stopMap[stopId2];
-    return `${stop1.stop_name} -> ${stop2.stop_name}`;
+    return `${stop1.stop_name} → ${stop2.stop_name}`;
   }
 
   private computeMultilegBitRecur(

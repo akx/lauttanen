@@ -101,7 +101,7 @@ function Core({ gtfsData }: { gtfsData: GTFSData }) {
           .map((s) => s.stop_name)
           .join(" - ")}
       </h1>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", margin: ".5rem" }}>
         <div style={{ flex: 1 }}>
           <ResultTabs
             id="tabs1"

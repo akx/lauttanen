@@ -30,6 +30,10 @@ tr.initial td.st {
   font-weight: bold;
 }
 
+td.adu {
+  white-space: nowrap;
+}
+
 .remark {
   opacity: 0.7;
   font-size: 0.9rem;
