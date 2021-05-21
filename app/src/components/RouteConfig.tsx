@@ -42,7 +42,7 @@ export function RouteConfig({
       {sortBy(
         Array.from(nextStops).map((stopId) => [
           stopId,
-          gtfsData.stopMap[stopId].stop_name,
+          gtfsData.stopMap[stopId]?.stop_name || stopId,
         ]),
         1
       ).map(([stopId, name]) => (
