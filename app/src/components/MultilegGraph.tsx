@@ -1,4 +1,4 @@
-import { Leg, LegType } from "../lib/multileg";
+import { Leg } from "../lib/multileg";
 import cytoscape, { ElementDefinition } from "cytoscape";
 import klay from "cytoscape-klay";
 import CytoscapeComponent from "react-cytoscapejs";
