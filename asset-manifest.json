@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lauttanen/static/css/main.7ec0d09a.chunk.css",
-    "main.js": "/lauttanen/static/js/main.d5d2733e.chunk.js",
+    "main.css": "/lauttanen/static/css/main.a03e1cfd.chunk.css",
+    "main.js": "/lauttanen/static/js/main.d1cbb3f5.chunk.js",
     "runtime-main.js": "/lauttanen/static/js/runtime-main.5951ca08.js",
     "static/css/2.b52591f0.chunk.css": "/lauttanen/static/css/2.b52591f0.chunk.css",
     "static/js/2.d94e97b7.chunk.js": "/lauttanen/static/js/2.d94e97b7.chunk.js",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.5951ca08.js",
     "static/css/2.b52591f0.chunk.css",
     "static/js/2.d94e97b7.chunk.js",
-    "static/css/main.7ec0d09a.chunk.css",
-    "static/js/main.d5d2733e.chunk.js"
+    "static/css/main.a03e1cfd.chunk.css",
+    "static/js/main.d1cbb3f5.chunk.js"
   ]
 }
