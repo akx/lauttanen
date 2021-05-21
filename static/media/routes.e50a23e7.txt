@@ -1,0 +1,135 @@
+route_id,agency_id,route_long_name
+1,1,Keistiö-Dalen
+2,1,Hämmärönsalmi
+3,1,Högsar
+4,1,Kivimo
+5,1,Kokkila
+6,1,Parainen-Nauvo
+7,1,Mossala
+8,1,Houtskari-Iniö
+9,1,Teersalo-Palva
+10,1,Nauvo-Korppoo
+11,1,Saverkeit
+12,11,Skagen
+13,1,Vartsala
+14,1,Palva-Velkuanmaa
+15,1,Våno
+16,1,Kasnäs-Hiittinen
+17,1,Kustavi-Iniö
+18,1,Barösund
+19,1,Skåldö
+20,1,Pellinki
+21,1,Eskilsö
+22,1,Räisälä
+23,1,Alassalmi
+24,1,Hirvisalmi
+25,1,Puutossalmi
+26,1,Kortesalmi
+27,1,Hanhivirta
+28,1,Arvinsalmi
+29,1,Hätinvirta
+30,1,Koivukanta
+31,1,Kuparonvirta
+32,1,Lamposaari
+33,1,Tappuvirta
+34,1,Vekaransalmi
+35,1,Rongonsalmi
+36,11,Kietävälä
+37,1,Kyläniemi
+38,1,Bergö-Bredskar
+39,1,Hailuoto-Oulunsalo
+40,1,Korppoo-Norrskata
+41,1,Svartnäs-Högsåra
+42,1,Korppoo-Houtskari
+43,7,Hiittisten reittialue
+44,6,Houtskari-Iniön reittialue
+45,8,Korppoon reittialue
+46,1,Kotka-Pyhtää
+47,6,Nauvon eteläinen reittialue
+48,1,Nauvon pohjoinen reittialue
+49,11,Paraisten reittialue
+50,7,Rymättylän reittialue
+51,1,Utön reittialue
+52,1,Velkuan reittialue
+53,10,Porvoon reittialue
+54,10,Sipoon reittialue
+55,9,Nauvo-Seili-Hanka (Rymättylä)
+56,1,Turku-Velkua
+57,1,Turku-Kustavi
+58,1,Turku-Korppoo
+59,1,Turku-Houtskari
+60,1,Turku-Taalintehdas
+61,1,Helsingin saaristolautat
+62,1,Espoon saaristoveneet
+63,1,Ahvenanmaan saaristolautat
+64,12,Pängätsalo
+65,12,Pikkarala
+66,12,Kellolampi
+67,12,Paanalansalmi
+68,12,Haukkasalo
+69,12,Kevätsalmi
+70,12,Sorpo
+71,12,Jussilansalmi
+72,12,Ritosaari
+73,12,Tuohisaari
+74,12,Pietolansaari
+75,12,Laukansaari
+76,12,Kongonsaari
+77,12,Ahvionsalmi
+78,12,Kokonsaari
+79,12,Käldö
+80,12,Pettu
+81,12,Sandö
+82,12,Karhusalmi
+83,12,Haverö
+84,13,Suomenlinnan lautta
+85,1,Teersalo-Hakkenpää
+86,2,Åva-Kustavi
+87,2,Åva-Jurmo
+88,2,Enklinge-Kumlinge
+89,2,Hummelvik-Enklinge-Kumlinge-Lappo-Torsholma
+90,2,Asterholma-Lappo-Torsholma
+91,2,Snäckö-Seglinge
+92,2,Snäckö-Överö-Bergö-Långnäs
+93,2,Snäckö-Sottunga-Överö-Långnäs
+94,2,Galtby-Kökar-Kyrkogårdsö-Husö-Sottunga-Överö-Långnäs
+95,2,Överö-Embarsund
+96,2,Svinö-Degerby
+97,2,Långnäs-Ängö
+98,2,Prästö-Töftö
+99,2,Sandö-Simskäla
+100,2,Björkö-Lappo
+101,2,Maarianhamina-Hammarland-Eckerö
+102,2,Maarianhamina-Godby-Geta
+103,2,Maarianhamina-Godby-Saltvik
+104,2,Maarianhamina-Godby-Sund-Vårdö
+105,2,Maarianhamina-Lemland-Lumparland
+106,14,Turku-Seili-Nauvo
+107,16,Kauppatori-Korkeasaari
+109,15,Kivenlahti-Ristiniemi-Soukka-Pentala-Suinonsalmi-Gåsgrundet-Rövaren-Stora Herrö
+110,15,Suomenoja-Iso Vasikkasaari
+111,15,Suomenoja-Suinonsalmi-Pentala-Soukka
+112,16,Hakaniemi-Korkeasaari
+113,16,Kauppatori-Isosaari
+114,16,Hakaniemi-Herttoniemi-Laajasalo-Vartiosaari-Kivisaari-Satamasaari-Iiluoto-Leikosaari-Vuosaari
+115,15,Suomenoja-Iso Vasikkasaari
+116,15,Haukilahti-Iso Vasikkasaari
+117,15,Nokkala-Iso Vasikkasaari
+118,15,Otaniemi-Haukilahti-Matinkylä-Iso Vasikkasaari-Suomenoja-Stora Herrö-Rövaren-Gåsgrundet
+119,18,Kauppatori-Suomenlinna (Tykistölahti ja Kuninkaanportti)
+120,18,Kauppatori-Lonna-Vallisaari-Suomenlinna-Lonna
+121,18,Hakaniemi-Suomenlinna
+122,18,Kauppatori-Vallisaari-Suomenlinna-Lonna
+123,18,Hakaniemi-Lonna-Suomenlinna-Vallisaari
+124,18,Kauppatori-Lonna-Suomenlinna
+125,19,Klippanin yhteysvene
+126,19,Sirpalesaaren yhteysvene
+127,20,Merisataman lautta
+128,21,Valkosaaren yhteysvene
+129,20,Merisatama-Pihlajasaari
+130,20,Ruoholahti-Pihlajasaari
+131,22,Merisatama-Sirpalesaari (vanha)
+132,23,Kauppatori-Vasikkasaari-Stansvik-Jollas
+133,17,Vuosaari-Kaunissaari
+134,15,Soukka-Pentala
+135,25,Kauppatori-Katajanokanluoto
